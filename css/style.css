@@ -6,6 +6,7 @@
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
+    color: white;
 
 }
 
@@ -14,6 +15,8 @@ body {
 
     width: 100% !important;
     overflow-x: hidden;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply;
 
 }
 
@@ -22,7 +25,6 @@ body {
     color: rgb(21, 21, 21);
     background-color: white;
     flex-direction: column;
-    width: 100vw;
     align-items: center;
     overflow-x: hidden;
 
@@ -50,6 +52,11 @@ h1 {
 
 }
 
+p {
+    text-align: center;
+    width: 100%;
+}
+
 h2 {
     text-align: center;
     width: 100%;
@@ -62,8 +69,6 @@ h3 {
 
 p {
 
-    padding-top: 10px;
-    padding-bottom: 10px;
     align-items: center;
     text-align: justify;
     font-size: 20px;
@@ -269,34 +274,32 @@ p {
 /* Imagen de fondo de "Contacto.html"*/
 .contact_style {
 
-
-    background-image: url(https://cdna.artstation.com/p/assets/images/images/038/793/958/large/facundo-giovannone-lofilevelsequence-3574.jpg?1624069696);
-    background-repeat: no-repeat;
-    background-size: cover;
     position: center;
     width: 100vw;
-    color: white;
+    color: black;
 }
 
 /* Fin imagen de fondo de "Contacto.html"*/
 
 /* Formulario "Contacto.html"*/
 
+.form_h1 {
+    font-weight: bold;
+}
+
 .form_contact {
 
     width: 50vw;
-    height: 80vh;
+    height: auto;
     margin: 0 auto;
     padding: 30px;
     background-color: #5b258ecc;
+    font-weight: bold;
     border-radius: 3px;
     margin-top: 15vh;
     margin-bottom: 15vh;
 
 }
-
-
-/* Fin formulario "Contacto.html"*/
 
 /* Botones formulario */
 
@@ -305,12 +308,18 @@ p {
 
     width: 30%;
     height: 30px;
+    color: #000;
+    font-weight: bold;
+
 }
 
 .buttom_delete_form {
 
     width: 30%;
     height: 30px;
+    color: #000;
+    font-weight: bold;
+
 }
 
 .form_buttons {
@@ -328,7 +337,8 @@ p {
     width: 100%;
     align-items: center;
     height: 5vh;
-
+    font-weight: bold;
+    color: #000;
 }
 
 /* CSS para header y footer */
@@ -341,30 +351,14 @@ p {
 
 /* Fin CSS para header y footer */
 
-/* CSS header */
-.nav_menu {
-
-    /*Fijación*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-}
 
 a {
 
     text-decoration: none;
     color: white;
     font-size: 22px;
-
-}
-
-nav a {
-
     font-weight: 600;
     padding-right: 1vw;
-
 }
 
 /* Estilo de logos de redes para contacto*/
@@ -410,8 +404,6 @@ nav a:hover {
 .main {
 
     align-content: center;
-    padding-left: 3vw;
-    padding-right: 3vw;
     padding-bottom: 10px;
     width: 100%;
 
@@ -436,13 +428,15 @@ nav a:hover {
 .footer {
 
     display: flex;
+    height: auto;
     width: 100vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: rgb(0, 0, 0, 80%);
-    color: white;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    height: 10vh;
+    height: auto;
     font-size: 20px;
 
 }
@@ -483,6 +477,7 @@ nav a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
+    justify-content: center;
     grid-auto-flow: row;
     grid-template-areas:
         "red_social1 red_social2 red_social3 copy";
@@ -505,7 +500,6 @@ nav a:hover {
 
 }
 
-
 .footer a {
 
     height: auto;
@@ -515,15 +509,11 @@ nav a:hover {
 .nav_menu {
 
     /*Customización nav menu*/
-    display: flex;
     background-color: #000;
     flex-wrap: wrap;
-    justify-content: center;
     width: 100vw;
-    align-items: center;
     color: white;
-    flex-direction: row;
-    height: 100px;
+    height: auto;
     font-size: 20px;
 
 }
@@ -666,72 +656,14 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: auto 0;
     width: 100%;
-}
-
-.container_lofi {
-
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "img_lofi content_text_lofi";
-}
-
-.img_lofi {
-
-    grid-area: img_lofi;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60vw;
-
-
-}
-
-.content_text_lofi {
-    grid-area: content_text_lofi;
-    width: 30vw;
-    padding: 1vw;
+    height: auto;
 }
 
 /*FIN GRID LOFI*/
 
 @media (max-width: 1000px) {
-
-    .container_lofi {
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.2fr;
-        gap: 0px 0px;
-
-        grid-template-areas:
-            "img_lofi"
-            "content_text_lofi";
-    }
-
-
-    .img_lofi {
-        grid-area: img_lofi;
-        width: 90vw;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content_text_lofi {
-
-        display: table-column;
-        grid-area: content_text_lofi;
-        width: 90vw;
-        justify-content: center;
-        align-items: center;
-
-    }
 
     .container_footer {
 
@@ -778,20 +710,11 @@ nav a:hover {
 
     }
 
-    .footer {
-
-        height: 15vh;
-
-    }
 
 }
 
 @media (max-width: 870px) {
 
-    .nav_menu {
-        flex-direction: column;
-        height: auto;
-    }
 
     .container_escuchar {
 
@@ -808,7 +731,6 @@ nav a:hover {
         height: 100vh;
         color: white;
     }
-
 
     .contact_footer {
 
@@ -831,7 +753,7 @@ nav a:hover {
 
         align-items: center;
         justify-content: center;
-        width: 90vw;
+        width: 100%;
         justify-items: center;
 
     }
@@ -841,14 +763,14 @@ nav a:hover {
         justify-content: center;
         padding-top: 0 auto;
         padding-bottom: 0 auto;
-        width: 90vw;
+        width: 100%;
 
     }
 
     .video-music {
         display: flex;
         justify-content: center;
-        width: 90vw;
+        width: 100%;
     }
 
     .container_escuchar2 {
@@ -860,19 +782,19 @@ nav a:hover {
         align-items: center;
         padding-top: 0 auto;
         padding-bottom: 0 auto;
-        width: 90vw;
+        width: 100%;
 
     }
 
     .video-music2 {
         display: flex;
         justify-content: center;
-        width: 90vw;
+        width: 100%;
     }
 
     .iframe_video {
 
-        width: 100vw;
+        width: 100%;
         height: 430px;
         border: 0;
 
@@ -885,12 +807,11 @@ nav a:hover {
     }
 
     .fond_img {
-        width: 100vw;
+        width: 100%;
     }
 
     .footer {
         flex-direction: grid;
-        height: 20vh;
     }
 
     .container_footer {
@@ -989,7 +910,6 @@ nav a:hover {
     .form_contact {
 
         width: 80vw;
-        height: 75vh;
         margin: 0 auto;
         padding: 20px;
         background-color: #5b258ecc;
@@ -1023,66 +943,151 @@ nav a:hover {
 
     .t_shirt_white {
         grid-area: t_shirt_white;
-        width: 50vw;
+        width: 100%;
     }
 
     .t_shirt_black {
         grid-area: t_shirt_black;
-        width: 50vw;
+        width: 100%;
     }
 
     .pants {
         grid-area: pants;
-        width: 50vw;
+        width: 100%;
     }
 
     .sweather-black {
         grid-area: sweather-black;
-        width: 50vw;
+        width: 100%;
     }
 
     .sweather-white {
         grid-area: sweather-white;
-        width: 50vw;
+        width: 100%;
     }
 
     .scarf {
         grid-area: scarf;
-        width: 50vw;
+        width: 100%;
     }
 
     .sneakers {
         grid-area: sneakers;
-        width: 50vw;
+        width: 100%;
     }
 
     .hat {
         grid-area: hat;
-        width: 50vw;
+        width: 100%;
     }
 
     .backpack {
         grid-area: backpack;
-        width: 50vw;
+        width: 100%;
     }
 
     .backpack2 {
         grid-area: backpack2;
-        width: 50vw;
+        width: 100%;
     }
 
     .backpack3 {
         grid-area: backpack3;
-        width: 50vw;
+        width: 100%;
     }
 
     .backpack4 {
         grid-area: backpack4;
-        width: 50vw;
+        width: 100%;
     }
 
 }
 
+@media (max-width: 600px) {
+    .tienda_product_galery {
+
+        display: grid;
+        width: 80vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 12*(1fr);
+        gap: 0px 0px;
+        grid-template-areas:
+            "t_shirt_white"
+            "t_shirt_black"
+            "pants"
+            "sweather-black"
+            "sweather-white"
+            "scarf"
+            "sneakers"
+            "hat"
+            "backpack"
+            "backpack2"
+            "backpack3"
+            "backpack4";
+
+    }
+
+
+    .t_shirt_white {
+        grid-area: t_shirt_white;
+        width: 100%;
+    }
+
+    .t_shirt_black {
+        grid-area: t_shirt_black;
+        width: 100%;
+    }
+
+    .pants {
+        grid-area: pants;
+        width: 100%;
+    }
+
+    .sweather-black {
+        grid-area: sweather-black;
+        width: 100%;
+    }
+
+    .sweather-white {
+        grid-area: sweather-white;
+        width: 100%;
+    }
+
+    .scarf {
+        grid-area: scarf;
+        width: 100%;
+    }
+
+    .sneakers {
+        grid-area: sneakers;
+        width: 100%;
+    }
+
+    .hat {
+        grid-area: hat;
+        width: 100%;
+    }
+
+    .backpack {
+        grid-area: backpack;
+        width: 100%;
+    }
+
+    .backpack2 {
+        grid-area: backpack2;
+        width: 100%;
+    }
+
+    .backpack3 {
+        grid-area: backpack3;
+        width: 100%;
+    }
+
+    .backpack4 {
+        grid-area: backpack4;
+        width: 100%;
+    }
+}
 
 @media (max-width: 400px) {
 
@@ -1091,7 +1096,6 @@ nav a:hover {
     .form_contact {
 
         width: 80vw;
-        height: 80vh;
         margin: 0 auto;
         padding: 20px;
         background-color: #5b258ecc;
@@ -1109,7 +1113,6 @@ nav a:hover {
     .form_contact {
 
         width: 80vw;
-        height: 85vh;
         margin: 0 auto;
         padding: 20px;
         background-color: #5b258ecc;
