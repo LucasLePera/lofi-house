@@ -41,7 +41,9 @@
   width: 100% !important;
   overflow-x: hidden;
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
-  background-blend-mode: multiply; }
+  background-blend-mode: multiply;
+  /*Bloque de escuchar.html con video a la izquierda y texto a la derecha*/
+  /*Bloque de escuchar.html con video a la derecha y texto a la izquierda*/ }
   .body .main {
     align-content: center;
     padding-bottom: 10px;
@@ -108,6 +110,95 @@
   .body .footer a {
     height: auto;
     padding: 0 auto; }
+  .body .footer {
+    display: flex;
+    height: auto;
+    width: 100vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    font-size: 20px; }
+    .body .footer .logo_facebook {
+      width: 25px;
+      height: 20px; }
+    .body .footer .logo_instagram {
+      width: 15px;
+      height: 15px; }
+    .body .footer .logo_twitter {
+      width: 15px;
+      height: 15px; }
+    .body .footer .copy_footer {
+      display: inline; }
+  .body .paragraph_escuchar {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-items: center; }
+  .body .iframe_video {
+    width: 40vw;
+    height: 430px;
+    border: 0; }
+  .body .container_escuchar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    grid-auto-flow: row;
+    grid-template-areas: "content-text video-music"; }
+  .body .content-text {
+    grid-area: content-text; }
+  .body .video-music {
+    grid-area: video-music;
+    display: flex;
+    justify-content: center; }
+  .body .container_escuchar2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    align-items: center;
+    grid-auto-flow: row;
+    grid-template-areas: "video-music2 content-text2"; }
+  .body .content-text2 {
+    align-items: center;
+    padding-top: 0 auto;
+    padding-bottom: 0 auto; }
+  .body .video-music2 {
+    grid-area: video-music2;
+    display: flex;
+    justify-content: center; }
+  .body .img_lofi {
+    width: 40vw; }
+  .body .lofi_text_top {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0vw;
+    grid-auto-flow: row;
+    grid-template-areas: "paragraph1 paragraph2 paragraph3"; }
+  .body .paragraph1 {
+    grid-area: paragraph1;
+    align-items: center;
+    justify-content: center;
+    width: 30vw; }
+  .body .paragraph2 {
+    grid-area: paragraph2;
+    width: 30vw; }
+  .body .paragraph3 {
+    grid-area: paragraph3;
+    width: 30vw; }
+  .body .img_lofi_girl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto 0;
+    width: 100%;
+    height: auto; }
 
 /*GRID TIENDA*/
 .tienda_product_galery {
@@ -115,7 +206,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "t_shirt_white t_shirt_black pants" "sweather-black sweather-white scarf" "sneakers hat backpack" "backpack2 backpack3 backpack4"; }
+  grid-template-areas: "t_shirt_white t_shirt_black pants"
+ "sweather-black sweather-white scarf"
+ "sneakers hat backpack"
+ "backpack2 backpack3 backpack4"; }
 
 .t_shirt_white {
   grid-area: t_shirt_white; }
@@ -294,100 +388,6 @@
   font-weight: bold;
   color: #000; }
 
-.body .footer {
-  display: flex;
-  height: auto;
-  width: 100vw;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: auto;
-  font-size: 20px; }
-  .body .footer .logo_facebook {
-    width: 25px;
-    height: 20px; }
-  .body .footer .logo_instagram {
-    width: 15px;
-    height: 15px; }
-  .body .footer .logo_twitter {
-    width: 15px;
-    height: 15px; }
-  .body .footer .copy_footer {
-    display: inline; }
-
-.body {
-  /*Bloque de escuchar.html con video a la izquierda y texto a la derecha*/
-  /*Bloque de escuchar.html con video a la derecha y texto a la izquierda*/ }
-  .body .paragraph_escuchar {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    justify-items: center; }
-  .body .iframe_video {
-    width: 40vw;
-    height: 430px;
-    border: 0; }
-  .body .container_escuchar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    grid-auto-flow: row;
-    grid-template-areas: "content-text video-music"; }
-  .body .content-text {
-    grid-area: content-text; }
-  .body .video-music {
-    grid-area: video-music;
-    display: flex;
-    justify-content: center; }
-  .body .container_escuchar2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    align-items: center;
-    grid-auto-flow: row;
-    grid-template-areas: "video-music2 content-text2"; }
-  .body .content-text2 {
-    align-items: center;
-    padding-top: 0 auto;
-    padding-bottom: 0 auto; }
-  .body .video-music2 {
-    grid-area: video-music2;
-    display: flex;
-    justify-content: center; }
-  .body .img_lofi {
-    width: 40vw; }
-  .body .lofi_text_top {
-    display: grid;
-    justify-items: center;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0vw;
-    grid-auto-flow: row;
-    grid-template-areas: "paragraph1 paragraph2 paragraph3"; }
-  .body .paragraph1 {
-    grid-area: paragraph1;
-    align-items: center;
-    justify-content: center;
-    width: 30vw; }
-  .body .paragraph2 {
-    grid-area: paragraph2;
-    width: 30vw; }
-  .body .paragraph3 {
-    grid-area: paragraph3;
-    width: 30vw; }
-  .body .img_lofi_girl {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: auto 0;
-    width: 100%;
-    height: auto; }
-
 @media (max-width: 1000px) {
   .body .container_footer {
     display: grid;
@@ -397,7 +397,10 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "red_social1" "red_social2" "red_social3" "copy"; }
+    grid-template-areas: "red_social1"
+ "red_social2"
+ "red_social3"
+ "copy"; }
   .body .red_social1 {
     grid-area: red_social1;
     display: flex;
@@ -420,10 +423,7 @@
     align-items: center; } }
 
 @media (max-width: 870px) {
-  .body {
-    /*Primer bloque de escuchar*/
-    /*ESTILO DEL FORMULARIO DE CONTACTO*/
-    /*PRODUCTOS TIENDA*/ }
+
     .body .container_escuchar {
       display: block; }
     .body .contact_style {
@@ -487,7 +487,10 @@
       grid-template-rows: 1fr 1fr 1fr 1fr;
       gap: 0px 0px;
       grid-auto-flow: row;
-      grid-template-areas: "red_social1" "red_social2" "red_social3" "copy_footer"; }
+      grid-template-areas: "red_social1"
+ "red_social2"
+ "red_social3"
+ "copy_footer"; }
     .body .red_social1 {
       grid-area: red_social1; }
     .body .red_social2 {
@@ -501,7 +504,8 @@
       grid-template-columns: 1fr;
       grid-template-rows: 1fr auto;
       gap: 0px 0px;
-      grid-template-areas: "img_lofi" "content_text_lofi"; }
+      grid-template-areas: "img_lofi"
+ "content_text_lofi"; }
     .body .content_text_lofi {
       grid-area: content_text_lofi;
       width: 90vw;
@@ -518,7 +522,9 @@
       grid-template-rows: 0.5fr 1fr 0.2fr;
       gap: 0px 30px;
       grid-auto-flow: row;
-      grid-template-areas: "paragraph1" "paragraph2" "paragraph3"; }
+      grid-template-areas: "paragraph1"
+ "paragraph2"
+ "paragraph3"; }
     .body .paragraph1 {
       grid-area: paragraph1;
       align-items: center;
@@ -544,7 +550,12 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       gap: 0px 0px;
-      grid-template-areas: "t_shirt_white t_shirt_black" "pants sweather-black" "sweather-white scarf" "sneakers hat" "backpack backpack2" "backpack3 backpack4"; }
+      grid-template-areas: "t_shirt_white t_shirt_black"
+ "pants sweather-black"
+ "sweather-white scarf"
+ "sneakers hat"
+ "backpack backpack2"
+ "backpack3 backpack4"; }
     .body .t_shirt_white {
       grid-area: t_shirt_white;
       width: 100%; }
@@ -589,7 +600,18 @@
     grid-template-columns: 1fr;
     grid-template-rows: 12fr;
     gap: 0px 0px;
-    grid-template-areas: "t_shirt_white" "t_shirt_black" "pants" "sweather-black" "sweather-white" "scarf" "sneakers" "hat" "backpack" "backpack2" "backpack3" "backpack4"; }
+    grid-template-areas: "t_shirt_white"
+ "t_shirt_black"
+ "pants"
+ "sweather-black"
+ "sweather-white"
+ "scarf"
+ "sneakers"
+ "hat"
+ "backpack"
+ "backpack2"
+ "backpack3"
+ "backpack4"; }
   .body .t_shirt_white {
     grid-area: t_shirt_white;
     width: 100%; }
@@ -628,7 +650,7 @@
     width: 100%; } }
 
 @media (max-width: 400px) {
-  .body {
+
     /*ESTILO DEL FORMULARIO DE CONTACTO*/ }
     .body .form_contact {
       width: 80vw;
@@ -637,10 +659,10 @@
       background-color: #5b258ecc;
       border-radius: 3px;
       margin-top: 110px;
-      margin-bottom: auto; } }
+      margin-bottom: auto; } 
 
 @media (max-width: 300px) {
-  .body {
+
     /*ESTILO DEL FORMULARIO DE CONTACTO*/ }
     .body .form_contact {
       width: 80vw;
@@ -649,4 +671,4 @@
       background-color: #5b258ecc;
       border-radius: 3px;
       margin-top: 110px;
-      margin-bottom: 110px; } }
+      margin-bottom: 110px; } 
