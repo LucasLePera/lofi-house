@@ -1,0 +1,127 @@
+.body {
+
+    color: rgb(21, 21, 21);
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100% !important;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background-blend-mode: multiply;
+
+    .main {
+
+        align-content: center;
+        padding-bottom: 10px;
+        width: 100%;
+
+    }
+
+    .nav_menu {
+
+        /*Customización nav menu*/
+        background-color: #000;
+        flex-wrap: wrap;
+        width: 100vw;
+        color: white;
+        height: auto;
+        font-size: 20px;
+
+    }
+
+    h1 {
+
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        font-size: 30px;
+        justify-content: center;
+        text-align: center;
+    
+    }
+
+    .nav {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        text-align: center;
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    p {
+
+        align-items: center;
+        text-align: justify;
+        font-size: 20px;
+        width: 100%;
+
+    }
+
+    a {
+
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        font-weight: 600;
+        padding-right: 1vw;
+    }
+
+    .img_lofi_top {
+
+        width: 100vw;
+
+    }
+
+    .container_footer {
+
+        display: grid;
+        width: 60vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        justify-content: center;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "red_social1 red_social2 red_social3 copy";
+    }
+
+    .red_social1 {
+        grid-area: red_social1;
+    }
+
+    .red_social2 {
+        grid-area: red_social2;
+    }
+
+    .red_social3 {
+        grid-area: red_social3;
+    }
+
+    .copy_footer {
+        grid-area: copy_footer;
+
+    }
+
+    .footer a {
+
+        height: auto;
+        padding: 0 auto;
+    }
+
+}

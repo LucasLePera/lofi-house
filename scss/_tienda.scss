@@ -1,0 +1,176 @@
+
+/*GRID TIENDA*/
+
+.tienda_product_galery {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+
+        "t_shirt_white t_shirt_black pants"
+        "sweather-black sweather-white scarf"
+        "sneakers hat backpack"
+        "backpack2 backpack3 backpack4";
+}
+
+
+.t_shirt_white {
+    grid-area: t_shirt_white;
+}
+
+.t_shirt_black {
+    grid-area: t_shirt_black;
+}
+
+.pants {
+    grid-area: pants;
+}
+
+.sweather-black {
+    grid-area: sweather-black;
+}
+
+.sweather-white {
+    grid-area: sweather-white;
+}
+
+.scarf {
+    grid-area: scarf;
+}
+
+.sneakers {
+    grid-area: sneakers;
+}
+
+.hat {
+    grid-area: hat;
+}
+
+.backpack {
+    grid-area: backpack;
+}
+
+.backpack2 {
+    grid-area: backpack2;
+}
+
+.backpack3 {
+    grid-area: backpack3;
+}
+
+.backpack4 {
+    grid-area: backpack4;
+}
+
+
+/*PRODUCTO TIENDA*/
+
+.product-card {
+    width: auto;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 20px;
+    background: #fafafa;
+}
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+    background: #f0f0f0;
+}
+
+.product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-details {
+    padding: 30px;
+}
+
+.product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.product-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+    color: red;
+}
+
+.product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: red;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: red;
+}

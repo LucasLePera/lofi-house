@@ -1,0 +1,17 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+@import './header';
+@import './body';
+@import './tienda';
+@import './contacto';
+@import './footer';
+@import './content-escuchar';
+@import './mediaq';

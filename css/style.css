@@ -1,477 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,700;1,200;1,300;1,400;1,700&display=swap');
-
+@charset "UTF-8";
 * {
-
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    box-sizing: border-box;
-    color: white;
-
-}
-
-html,
-body {
-
-    width: 100% !important;
-    overflow-x: hidden;
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
-    background-blend-mode: multiply;
-
-}
-
-.body {
-
-    color: rgb(21, 21, 21);
-    background-color: white;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-
-}
-
-/* Imágen debajo del header nav */
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+  color: white; }
 
 .header {
-
+  width: 100vw; }
+  .header .nav_menu {
+    /*Customización nav menu*/
+    background-color: #000;
+    flex-wrap: wrap;
     width: 100vw;
+    color: white;
+    height: auto;
+    font-size: 20px; }
+    .header .nav_menu nav a:hover {
+      color: #5B258F;
+      transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8); }
+    .header .nav_menu a {
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+      font-weight: 600;
+      padding-right: 1vw; }
+    .header .nav_menu .carrito_compras {
+      height: 30px; }
+    .header .nav_menu .img_lofi_top {
+      width: 100vw; }
 
-}
-
-/* Fin de imágen debajo del header nav */
-
-h1 {
-
+.body {
+  color: #151515;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100% !important;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background-blend-mode: multiply; }
+  .body .main {
+    align-content: center;
+    padding-bottom: 10px;
+    width: 100%; }
+  .body .nav_menu {
+    /*Customización nav menu*/
+    background-color: #000;
+    flex-wrap: wrap;
+    width: 100vw;
+    color: white;
+    height: auto;
+    font-size: 20px; }
+  .body h1 {
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
     font-size: 30px;
     justify-content: center;
+    text-align: center; }
+  .body .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .body p {
     text-align: center;
-
-}
-
-p {
+    width: 100%; }
+  .body h2 {
     text-align: center;
-    width: 100%;
-}
-
-h2 {
+    width: 100%; }
+  .body h3 {
     text-align: center;
-    width: 100%;
-}
-
-h3 {
-    text-align: center;
-    width: 100%;
-}
-
-p {
-
+    width: 100%; }
+  .body p {
     align-items: center;
     text-align: justify;
     font-size: 20px;
-    width: 100%;
-
-}
-
-.img_lofi_top {
-
-    width: 100vw;
-
-}
-
-/* Top artistas en "escuchar.html" */
-.list_escuchar {
-
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-
-}
-
-/* Fin top artistas en "escuchar.html" */
-
-/*GRID TIENDA*/
-
-.tienda_product_galery {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-
-        "t_shirt_white t_shirt_black pants"
-        "sweather-black sweather-white scarf"
-        "sneakers hat backpack"
-        "backpack2 backpack3 backpack4";
-}
-
-
-.t_shirt_white {
-    grid-area: t_shirt_white;
-}
-
-.t_shirt_black {
-    grid-area: t_shirt_black;
-}
-
-.pants {
-    grid-area: pants;
-}
-
-.sweather-black {
-    grid-area: sweather-black;
-}
-
-.sweather-white {
-    grid-area: sweather-white;
-}
-
-.scarf {
-    grid-area: scarf;
-}
-
-.sneakers {
-    grid-area: sneakers;
-}
-
-.hat {
-    grid-area: hat;
-}
-
-.backpack {
-    grid-area: backpack;
-}
-
-.backpack2 {
-    grid-area: backpack2;
-}
-
-.backpack3 {
-    grid-area: backpack3;
-}
-
-.backpack4 {
-    grid-area: backpack4;
-}
-
-
-/*PRODUCTO TIENDA*/
-
-.product-card {
-    width: auto;
-    box-shadow: 0 2px 7px #dfdfdf;
-    margin: 20px;
-    background: #fafafa;
-}
-
-.badge {
-    position: absolute;
-    left: 0;
-    top: 20px;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-    background: red;
-    color: #fff;
-    padding: 3px 10px;
-}
-
-.product-tumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    padding: 50px;
-    background: #f0f0f0;
-}
-
-.product-tumb img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.product-details {
-    padding: 30px;
-}
-
-.product-catagory {
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ccc;
-    margin-bottom: 18px;
-}
-
-.product-details h4 a {
-    font-weight: 500;
-    display: block;
-    margin-bottom: 18px;
-    text-transform: uppercase;
-    color: #363636;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.product-details h4 a:hover {
-    color: red;
-}
-
-.product-details p {
-    font-size: 15px;
-    line-height: 22px;
-    margin-bottom: 18px;
-    color: #999;
-}
-
-.product-bottom-details {
-    overflow: hidden;
-    border-top: 1px solid #eee;
-    padding-top: 20px;
-}
-
-.product-bottom-details div {
-    float: left;
-    width: 50%;
-}
-
-.product-price {
-    font-size: 18px;
-    color: red;
-    font-weight: 600;
-}
-
-.product-price small {
-    font-size: 80%;
-    font-weight: 400;
-    text-decoration: line-through;
-    display: inline-block;
-    margin-right: 5px;
-}
-
-.product-links {
-    text-align: right;
-}
-
-.product-links a {
-    display: inline-block;
-    margin-left: 5px;
-    color: #e1e1e1;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-.product-links a:hover {
-    color: red;
-}
-
-/*fin producto tienda*/
-
-/* Imagen de fondo de "Contacto.html"*/
-.contact_style {
-
-    position: center;
-    width: 100vw;
-    color: black;
-}
-
-/* Fin imagen de fondo de "Contacto.html"*/
-
-/* Formulario "Contacto.html"*/
-
-.form_h1 {
-    font-weight: bold;
-}
-
-.form_contact {
-
-    width: 50vw;
-    height: auto;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #5b258ecc;
-    font-weight: bold;
-    border-radius: 3px;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-
-}
-
-/* Botones formulario */
-
-
-.buttom_confirm_form {
-
-    width: 30%;
-    height: 30px;
-    color: #000;
-    font-weight: bold;
-
-}
-
-.buttom_delete_form {
-
-    width: 30%;
-    height: 30px;
-    color: #000;
-    font-weight: bold;
-
-}
-
-.form_buttons {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 5vh;
-}
-
-/* Fin botones formulario */
-
-.item_form {
-
-    width: 100%;
-    align-items: center;
-    height: 5vh;
-    font-weight: bold;
-    color: #000;
-}
-
-/* CSS para header y footer */
-.nav {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Fin CSS para header y footer */
-
-
-a {
-
+    width: 100%; }
+  .body a {
     text-decoration: none;
     color: white;
     font-size: 22px;
     font-weight: 600;
-    padding-right: 1vw;
-}
-
-/* Estilo de logos de redes para contacto*/
-.logo_facebook {
-
-    width: 25px;
-    height: 20px;
-
-}
-
-.logo_instagram {
-
-    width: 15px;
-    height: 15px;
-
-}
-
-.logo_twitter {
-
-    width: 15px;
-    height: 15px;
-
-}
-
-/* Foto de articulo en venta */
-.sell_article_img {
-
-    width: 300px;
-
-}
-
-/* Cambio de color en header al seleccionar con cursory efecto Shrink */
-nav a:hover {
-
-    color: #5B258F;
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-
-}
-
-/* Formato main */
-.main {
-
-    align-content: center;
-    padding-bottom: 10px;
-    width: 100%;
-
-}
-
-.carrito_compras {
-
-    height: 30px;
-
-}
-
-
-/* Mensaje de Copyright en footer */
-.copy_footer {
-
-    display: inline;
-
-}
-
-/* FIn mensaje de Copyright en footer */
-
-.footer {
-
-    display: flex;
-    height: auto;
-    width: 100vw;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: rgb(0, 0, 0, 80%);
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: auto;
-    font-size: 20px;
-
-}
-
-/*GRID FOOTER*/
-
-/*CONTACT FOOTER (pegado bottom = fixed)*/
-
-.contact_footer {
-
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    background-color: #000000cc;
-    color: white;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 10vh;
-    font-size: 20px;
-
-}
-
-.paragraph_escuchar {
-
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    justify-items: center;
-
-}
-
-.container_footer {
-
+    padding-right: 1vw; }
+  .body .img_lofi_top {
+    width: 100vw; }
+  .body .container_footer {
     display: grid;
     width: 60vw;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -479,148 +96,271 @@ nav a:hover {
     gap: 0px 0px;
     justify-content: center;
     grid-auto-flow: row;
-    grid-template-areas:
-        "red_social1 red_social2 red_social3 copy";
-}
-
-.red_social1 {
-    grid-area: red_social1;
-}
-
-.red_social2 {
-    grid-area: red_social2;
-}
-
-.red_social3 {
-    grid-area: red_social3;
-}
-
-.copy_footer {
-    grid-area: copy_footer;
-
-}
-
-.footer a {
-
+    grid-template-areas: "red_social1 red_social2 red_social3 copy"; }
+  .body .red_social1 {
+    grid-area: red_social1; }
+  .body .red_social2 {
+    grid-area: red_social2; }
+  .body .red_social3 {
+    grid-area: red_social3; }
+  .body .copy_footer {
+    grid-area: copy_footer; }
+  .body .footer a {
     height: auto;
-    padding: 0 auto;
-}
+    padding: 0 auto; }
 
-.nav_menu {
+/*GRID TIENDA*/
+.tienda_product_galery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "t_shirt_white t_shirt_black pants" "sweather-black sweather-white scarf" "sneakers hat backpack" "backpack2 backpack3 backpack4"; }
 
-    /*Customización nav menu*/
-    background-color: #000;
-    flex-wrap: wrap;
-    width: 100vw;
-    color: white;
-    height: auto;
-    font-size: 20px;
+.t_shirt_white {
+  grid-area: t_shirt_white; }
 
-}
+.t_shirt_black {
+  grid-area: t_shirt_black; }
 
-/*Productos de la tienda*/
-/*(P=Producto)*/
+.pants {
+  grid-area: pants; }
 
-.sell-items {
+.sweather-black {
+  grid-area: sweather-black; }
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 20px 20px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "P1 P2 P3"
-    ;
-}
+.sweather-white {
+  grid-area: sweather-white; }
 
-.P1 {
-    grid-area: P1;
-}
+.scarf {
+  grid-area: scarf; }
 
-.P2 {
-    grid-area: P2;
-}
+.sneakers {
+  grid-area: sneakers; }
 
-.P3 {
-    grid-area: P3;
-}
+.hat {
+  grid-area: hat; }
 
+.backpack {
+  grid-area: backpack; }
 
-.iframe_video {
+.backpack2 {
+  grid-area: backpack2; }
 
+.backpack3 {
+  grid-area: backpack3; }
+
+.backpack4 {
+  grid-area: backpack4; }
+
+/*PRODUCTO TIENDA*/
+.product-card {
+  width: auto;
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 20px;
+  background: #fafafa; }
+
+.badge {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  background: red;
+  color: #fff;
+  padding: 3px 10px; }
+
+.product-tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  padding: 50px;
+  background: #f0f0f0; }
+
+.product-tumb img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.product-details {
+  padding: 30px; }
+
+.product-catagory {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 18px; }
+
+.product-details h4 a {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #363636;
+  text-decoration: none;
+  transition: 0.3s; }
+
+.product-details h4 a:hover {
+  color: red; }
+
+.product-details p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  color: #999; }
+
+.product-bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 20px; }
+
+.product-bottom-details div {
+  float: left;
+  width: 50%; }
+
+.product-price {
+  font-size: 18px;
+  color: red;
+  font-weight: 600; }
+
+.product-price small {
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 5px; }
+
+.product-links {
+  text-align: right; }
+
+.product-links a {
+  display: inline-block;
+  margin-left: 5px;
+  color: #e1e1e1;
+  transition: 0.3s;
+  font-size: 17px; }
+
+.product-links a:hover {
+  color: red; }
+
+.contact_style {
+  position: center;
+  width: 100vw;
+  color: black; }
+
+/* Fin imagen de fondo de "Contacto.html"*/
+/* Formulario "Contacto.html"*/
+.form_h1 {
+  font-weight: bold; }
+
+.form_contact {
+  width: 50vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #5b258ecc;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-top: 15vh;
+  margin-bottom: 15vh; }
+
+/* Botones formulario */
+.buttom_confirm_form {
+  width: 30%;
+  height: 30px;
+  color: #000;
+  font-weight: bold; }
+
+.buttom_delete_form {
+  width: 30%;
+  height: 30px;
+  color: #000;
+  font-weight: bold; }
+
+.form_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5vh; }
+
+/* Fin botones formulario */
+.item_form {
+  width: 100%;
+  align-items: center;
+  height: 5vh;
+  font-weight: bold;
+  color: #000; }
+
+.body .footer {
+  display: flex;
+  height: auto;
+  width: 100vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  font-size: 20px; }
+  .body .footer .logo_facebook {
+    width: 25px;
+    height: 20px; }
+  .body .footer .logo_instagram {
+    width: 15px;
+    height: 15px; }
+  .body .footer .logo_twitter {
+    width: 15px;
+    height: 15px; }
+  .body .footer .copy_footer {
+    display: inline; }
+
+.body {
+  /*Bloque de escuchar.html con video a la izquierda y texto a la derecha*/
+  /*Bloque de escuchar.html con video a la derecha y texto a la izquierda*/ }
+  .body .paragraph_escuchar {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-items: center; }
+  .body .iframe_video {
     width: 40vw;
     height: 430px;
-    border: 0;
-
-}
-
-/*GRID escuchar.html*/
-
-/*Bloque de escuchar.html con video a la izquierda y texto a la derecha*/
-.container_escuchar {
-
+    border: 0; }
+  .body .container_escuchar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     grid-auto-flow: row;
-    grid-template-areas:
-        "content-text video-music";
-
-}
-
-.content-text {
-    grid-area: content-text;
-}
-
-.video-music {
+    grid-template-areas: "content-text video-music"; }
+  .body .content-text {
+    grid-area: content-text; }
+  .body .video-music {
     grid-area: video-music;
     display: flex;
-    justify-content: center;
-
-}
-
-/*Bloque de escuchar.html con video a la derecha y texto a la izquierda*/
-.container_escuchar2 {
-
+    justify-content: center; }
+  .body .container_escuchar2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     align-items: center;
     grid-auto-flow: row;
-    grid-template-areas:
-        "video-music2 content-text2";
-}
-
-.content-text2 {
+    grid-template-areas: "video-music2 content-text2"; }
+  .body .content-text2 {
     align-items: center;
     padding-top: 0 auto;
-    padding-bottom: 0 auto;
-
-}
-
-.video-music2 {
+    padding-bottom: 0 auto; }
+  .body .video-music2 {
     grid-area: video-music2;
     display: flex;
-    justify-content: center;
-
-}
-
-
-/*FIN GRID escuchar.html*/
-
-.img_lofi {
-
-    width: 40vw;
-
-}
-
-/*INICIO GRID LOFI*/
-
-.lofi_text_top {
-
-
+    justify-content: center; }
+  .body .img_lofi {
+    width: 40vw; }
+  .body .lofi_text_top {
     display: grid;
     justify-items: center;
     width: 100%;
@@ -628,498 +368,285 @@ nav a:hover {
     grid-template-rows: 1fr;
     gap: 0px 0vw;
     grid-auto-flow: row;
-    grid-template-areas:
-        "paragraph1 paragraph2 paragraph3";
-}
-
-.paragraph1 {
+    grid-template-areas: "paragraph1 paragraph2 paragraph3"; }
+  .body .paragraph1 {
     grid-area: paragraph1;
     align-items: center;
     justify-content: center;
-    width: 30vw;
-}
-
-.paragraph2 {
+    width: 30vw; }
+  .body .paragraph2 {
     grid-area: paragraph2;
-    width: 30vw;
-
-}
-
-.paragraph3 {
+    width: 30vw; }
+  .body .paragraph3 {
     grid-area: paragraph3;
-    width: 30vw;
-
-}
-
-.img_lofi_girl {
-
+    width: 30vw; }
+  .body .img_lofi_girl {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: auto 0;
     width: 100%;
-    height: auto;
-}
-
-/*FIN GRID LOFI*/
+    height: auto; }
 
 @media (max-width: 1000px) {
-
-    .container_footer {
-
-        display: grid;
-        width: 20vw;
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "red_social1"
-            "red_social2"
-            "red_social3"
-            "copy";
-    }
-
-    .red_social1 {
-        grid-area: red_social1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .red_social2 {
-        grid-area: red_social2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .red_social3 {
-        grid-area: red_social3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .copy_footer {
-        grid-area: copy_footer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-
-}
+  .body .container_footer {
+    display: grid;
+    width: 20vw;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "red_social1" "red_social2" "red_social3" "copy"; }
+  .body .red_social1 {
+    grid-area: red_social1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .body .red_social2 {
+    grid-area: red_social2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .body .red_social3 {
+    grid-area: red_social3;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .body .copy_footer {
+    grid-area: copy_footer;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
 
 @media (max-width: 870px) {
-
-
-    .container_escuchar {
-
-        display: block;
-    }
-
-    .contact_style {
-
-
-        background-image: url(https://cdna.artstation.com/p/assets/images/images/038/793/958/large/facundo-giovannone-lofilevelsequence-3574.jpg?1624069696);
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: center;
-        height: 100vh;
-        color: white;
-    }
-
-    .contact_footer {
-
-        display: flex;
-        position: fixed;
-        bottom: 0;
-        width: 100vw;
-        background-color: #000000cc;
-        color: white;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: auto;
-        font-size: 20px;
-
-    }
-
+  .body {
     /*Primer bloque de escuchar*/
-    .paragraph_escuchar {
-
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        justify-items: center;
-
-    }
-
-    .content-text {
-        align-items: center;
-        justify-content: center;
-        padding-top: 0 auto;
-        padding-bottom: 0 auto;
-        width: 100%;
-
-    }
-
-    .video-music {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .container_escuchar2 {
-
-        display: block;
-    }
-
-    .content-text2 {
-        align-items: center;
-        padding-top: 0 auto;
-        padding-bottom: 0 auto;
-        width: 100%;
-
-    }
-
-    .video-music2 {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .iframe_video {
-
-        width: 100%;
-        height: 430px;
-        border: 0;
-
-    }
-
-    .container_escuchar {
-
-        justify-content: center;
-
-    }
-
-    .fond_img {
-        width: 100%;
-    }
-
-    .footer {
-        flex-direction: grid;
-    }
-
-    .container_footer {
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "red_social1"
-            "red_social2"
-            "red_social3"
-            "copy_footer";
-    }
-
-    .red_social1 {
-        grid-area: red_social1;
-    }
-
-    .red_social2 {
-        grid-area: red_social2;
-    }
-
-    .red_social3 {
-        grid-area: red_social3;
-    }
-
-    .copy_footer {
-        grid-area: copy_footer;
-    }
-
-
-    .container_lofi {
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto;
-        gap: 0px 0px;
-
-        grid-template-areas:
-            "img_lofi"
-            "content_text_lofi";
-    }
-
-    .content_text_lofi {
-        grid-area: content_text_lofi;
-        width: 90vw;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .img_lofi {
-        grid-area: img_lofi;
-
-        width: 90vw;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .lofi_text_top {
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 0.2fr;
-        gap: 0px 30px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "paragraph1"
-            "paragraph2"
-            "paragraph3";
-    }
-
-    .paragraph1 {
-
-        grid-area: paragraph1;
-        align-items: center;
-        justify-content: center;
-        width: 90vw;
-    }
-
-    .paragraph2 {
-        grid-area: paragraph2;
-        width: 90vw;
-    }
-
-    .paragraph3 {
-        grid-area: paragraph3;
-        width: 90vw;
-    }
-
     /*ESTILO DEL FORMULARIO DE CONTACTO*/
-
-    .form_contact {
-
-        width: 80vw;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #5b258ecc;
-        border-radius: 3px;
-        margin-top: 110px;
-        margin-bottom: 110px;
-
-    }
-
-
-    /*PRODUCTOS TIENDA*/
-
-
-    .tienda_product_galery {
-
-        display: grid;
-        width: 80vw;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-            "t_shirt_white t_shirt_black"
-            "pants sweather-black"
-            "sweather-white scarf"
-            "sneakers hat"
-            "backpack backpack2"
-            "backpack3 backpack4";
-
-    }
-
-
-    .t_shirt_white {
-        grid-area: t_shirt_white;
-        width: 100%;
-    }
-
-    .t_shirt_black {
-        grid-area: t_shirt_black;
-        width: 100%;
-    }
-
-    .pants {
-        grid-area: pants;
-        width: 100%;
-    }
-
-    .sweather-black {
-        grid-area: sweather-black;
-        width: 100%;
-    }
-
-    .sweather-white {
-        grid-area: sweather-white;
-        width: 100%;
-    }
-
-    .scarf {
-        grid-area: scarf;
-        width: 100%;
-    }
-
-    .sneakers {
-        grid-area: sneakers;
-        width: 100%;
-    }
-
-    .hat {
-        grid-area: hat;
-        width: 100%;
-    }
-
-    .backpack {
-        grid-area: backpack;
-        width: 100%;
-    }
-
-    .backpack2 {
-        grid-area: backpack2;
-        width: 100%;
-    }
-
-    .backpack3 {
-        grid-area: backpack3;
-        width: 100%;
-    }
-
-    .backpack4 {
-        grid-area: backpack4;
-        width: 100%;
-    }
-
-}
+    /*PRODUCTOS TIENDA*/ }
+    .body .container_escuchar {
+      display: block; }
+    .body .contact_style {
+      background-image: url(https://cdna.artstation.com/p/assets/images/images/038/793/958/large/facundo-giovannone-lofilevelsequence-3574.jpg?1624069696);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: center;
+      height: 100vh;
+      color: white; }
+    .body .contact_footer {
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      width: 100vw;
+      background-color: #000000cc;
+      color: white;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+      font-size: 20px; }
+    .body .paragraph_escuchar {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      justify-items: center; }
+    .body .content-text {
+      align-items: center;
+      justify-content: center;
+      padding-top: 0 auto;
+      padding-bottom: 0 auto;
+      width: 100%; }
+    .body .video-music {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+    .body .container_escuchar2 {
+      display: block; }
+    .body .content-text2 {
+      align-items: center;
+      padding-top: 0 auto;
+      padding-bottom: 0 auto;
+      width: 100%; }
+    .body .video-music2 {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+    .body .iframe_video {
+      width: 100%;
+      height: 430px;
+      border: 0; }
+    .body .container_escuchar {
+      justify-content: center; }
+    .body .fond_img {
+      width: 100%; }
+    .body .footer {
+      flex-direction: grid; }
+    .body .container_footer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas: "red_social1" "red_social2" "red_social3" "copy_footer"; }
+    .body .red_social1 {
+      grid-area: red_social1; }
+    .body .red_social2 {
+      grid-area: red_social2; }
+    .body .red_social3 {
+      grid-area: red_social3; }
+    .body .copy_footer {
+      grid-area: copy_footer; }
+    .body .container_lofi {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+      gap: 0px 0px;
+      grid-template-areas: "img_lofi" "content_text_lofi"; }
+    .body .content_text_lofi {
+      grid-area: content_text_lofi;
+      width: 90vw;
+      justify-content: center;
+      align-items: center; }
+    .body .img_lofi {
+      grid-area: img_lofi;
+      width: 90vw;
+      justify-content: center;
+      align-items: center; }
+    .body .lofi_text_top {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr 0.2fr;
+      gap: 0px 30px;
+      grid-auto-flow: row;
+      grid-template-areas: "paragraph1" "paragraph2" "paragraph3"; }
+    .body .paragraph1 {
+      grid-area: paragraph1;
+      align-items: center;
+      justify-content: center;
+      width: 90vw; }
+    .body .paragraph2 {
+      grid-area: paragraph2;
+      width: 90vw; }
+    .body .paragraph3 {
+      grid-area: paragraph3;
+      width: 90vw; }
+    .body .form_contact {
+      width: 80vw;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #5b258ecc;
+      border-radius: 3px;
+      margin-top: 110px;
+      margin-bottom: 110px; }
+    .body .tienda_product_galery {
+      display: grid;
+      width: 80vw;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "t_shirt_white t_shirt_black" "pants sweather-black" "sweather-white scarf" "sneakers hat" "backpack backpack2" "backpack3 backpack4"; }
+    .body .t_shirt_white {
+      grid-area: t_shirt_white;
+      width: 100%; }
+    .body .t_shirt_black {
+      grid-area: t_shirt_black;
+      width: 100%; }
+    .body .pants {
+      grid-area: pants;
+      width: 100%; }
+    .body .sweather-black {
+      grid-area: sweather-black;
+      width: 100%; }
+    .body .sweather-white {
+      grid-area: sweather-white;
+      width: 100%; }
+    .body .scarf {
+      grid-area: scarf;
+      width: 100%; }
+    .body .sneakers {
+      grid-area: sneakers;
+      width: 100%; }
+    .body .hat {
+      grid-area: hat;
+      width: 100%; }
+    .body .backpack {
+      grid-area: backpack;
+      width: 100%; }
+    .body .backpack2 {
+      grid-area: backpack2;
+      width: 100%; }
+    .body .backpack3 {
+      grid-area: backpack3;
+      width: 100%; }
+    .body .backpack4 {
+      grid-area: backpack4;
+      width: 100%; } }
 
 @media (max-width: 600px) {
-    .tienda_product_galery {
-
-        display: grid;
-        width: 80vw;
-        grid-template-columns: 1fr;
-        grid-template-rows: 12*(1fr);
-        gap: 0px 0px;
-        grid-template-areas:
-            "t_shirt_white"
-            "t_shirt_black"
-            "pants"
-            "sweather-black"
-            "sweather-white"
-            "scarf"
-            "sneakers"
-            "hat"
-            "backpack"
-            "backpack2"
-            "backpack3"
-            "backpack4";
-
-    }
-
-
-    .t_shirt_white {
-        grid-area: t_shirt_white;
-        width: 100%;
-    }
-
-    .t_shirt_black {
-        grid-area: t_shirt_black;
-        width: 100%;
-    }
-
-    .pants {
-        grid-area: pants;
-        width: 100%;
-    }
-
-    .sweather-black {
-        grid-area: sweather-black;
-        width: 100%;
-    }
-
-    .sweather-white {
-        grid-area: sweather-white;
-        width: 100%;
-    }
-
-    .scarf {
-        grid-area: scarf;
-        width: 100%;
-    }
-
-    .sneakers {
-        grid-area: sneakers;
-        width: 100%;
-    }
-
-    .hat {
-        grid-area: hat;
-        width: 100%;
-    }
-
-    .backpack {
-        grid-area: backpack;
-        width: 100%;
-    }
-
-    .backpack2 {
-        grid-area: backpack2;
-        width: 100%;
-    }
-
-    .backpack3 {
-        grid-area: backpack3;
-        width: 100%;
-    }
-
-    .backpack4 {
-        grid-area: backpack4;
-        width: 100%;
-    }
-}
+  .body .tienda_product_galery {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12fr;
+    gap: 0px 0px;
+    grid-template-areas: "t_shirt_white" "t_shirt_black" "pants" "sweather-black" "sweather-white" "scarf" "sneakers" "hat" "backpack" "backpack2" "backpack3" "backpack4"; }
+  .body .t_shirt_white {
+    grid-area: t_shirt_white;
+    width: 100%; }
+  .body .t_shirt_black {
+    grid-area: t_shirt_black;
+    width: 100%; }
+  .body .pants {
+    grid-area: pants;
+    width: 100%; }
+  .body .sweather-black {
+    grid-area: sweather-black;
+    width: 100%; }
+  .body .sweather-white {
+    grid-area: sweather-white;
+    width: 100%; }
+  .body .scarf {
+    grid-area: scarf;
+    width: 100%; }
+  .body .sneakers {
+    grid-area: sneakers;
+    width: 100%; }
+  .body .hat {
+    grid-area: hat;
+    width: 100%; }
+  .body .backpack {
+    grid-area: backpack;
+    width: 100%; }
+  .body .backpack2 {
+    grid-area: backpack2;
+    width: 100%; }
+  .body .backpack3 {
+    grid-area: backpack3;
+    width: 100%; }
+  .body .backpack4 {
+    grid-area: backpack4;
+    width: 100%; } }
 
 @media (max-width: 400px) {
-
-    /*ESTILO DEL FORMULARIO DE CONTACTO*/
-
-    .form_contact {
-
-        width: 80vw;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #5b258ecc;
-        border-radius: 3px;
-        margin-top: 110px;
-        margin-bottom: auto;
-
-    }
-
-}
+  .body {
+    /*ESTILO DEL FORMULARIO DE CONTACTO*/ }
+    .body .form_contact {
+      width: 80vw;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #5b258ecc;
+      border-radius: 3px;
+      margin-top: 110px;
+      margin-bottom: auto; } }
 
 @media (max-width: 300px) {
-
-    /*ESTILO DEL FORMULARIO DE CONTACTO*/
-    .form_contact {
-
-        width: 80vw;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #5b258ecc;
-        border-radius: 3px;
-        margin-top: 110px;
-        margin-bottom: 110px;
-
-    }
-
-}
+  .body {
+    /*ESTILO DEL FORMULARIO DE CONTACTO*/ }
+    .body .form_contact {
+      width: 80vw;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #5b258ecc;
+      border-radius: 3px;
+      margin-top: 110px;
+      margin-bottom: 110px; } }
