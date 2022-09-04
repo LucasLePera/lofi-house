@@ -6,32 +6,6 @@
   box-sizing: border-box;
   color: white; }
 
-.header {
-  width: 100vw; }
-  .header .nav_menu {
-    /*Customización nav menu*/
-    background-color: #000;
-    flex-wrap: wrap;
-    width: 100vw;
-    color: white;
-    height: auto;
-    font-size: 20px; }
-    .header .nav_menu nav a:hover {
-      color: #5B258F;
-      transform: scale(0.8);
-      -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8); }
-    .header .nav_menu a {
-      text-decoration: none;
-      color: white;
-      font-size: 22px;
-      font-weight: 600;
-      padding-right: 1vw; }
-    .header .nav_menu .carrito_compras {
-      height: 30px; }
-    .header .nav_menu .img_lofi_top {
-      width: 100vw; }
-
 .body {
   color: #151515;
   background-color: white;
@@ -56,6 +30,25 @@
     color: white;
     height: auto;
     font-size: 20px; }
+    .body .nav_menu a {
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+      font-weight: 600;
+      padding-right: 1vw; }
+    .body .nav_menu a:hover {
+      color: #5B258F;
+      transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8); }
+    .body .nav_menu .carrito_compras {
+      height: 30px; }
+    .body .nav_menu .carrito_compras:hover {
+      transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8); }
+    .body .nav_menu .img_lofi_top {
+      width: 100vw; }
   .body h1 {
     display: flex;
     padding-top: 10px;
@@ -295,53 +288,9 @@
 .product-links a:hover {
   color: red; }
 
-.contact_style {
-  position: center;
-  width: 100vw;
+.body_contact {
+  height: 100%;
   color: black; }
-
-/* Fin imagen de fondo de "Contacto.html"*/
-/* Formulario "Contacto.html"*/
-.form_h1 {
-  font-weight: bold; }
-
-.form_contact {
-  width: 50vw;
-  height: auto;
-  margin: 0 auto;
-  padding: 30px;
-  background-color: #5b258ecc;
-  font-weight: bold;
-  border-radius: 3px;
-  margin-top: 15vh;
-  margin-bottom: 15vh; }
-
-/* Botones formulario */
-.buttom_confirm_form {
-  width: 30%;
-  height: 30px;
-  color: #000;
-  font-weight: bold; }
-
-.buttom_delete_form {
-  width: 30%;
-  height: 30px;
-  color: #000;
-  font-weight: bold; }
-
-.form_buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 5vh; }
-
-/* Fin botones formulario */
-.item_form {
-  width: 100%;
-  align-items: center;
-  height: 5vh;
-  font-weight: bold;
-  color: #000; }
 
 @media (max-width: 1000px) {
   .body .container_footer {
@@ -608,7 +557,7 @@
 
 .body .footer {
   display: flex;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center; }
@@ -643,6 +592,9 @@
     stroke-dasharray: 150;
     transition: all .8s ease-in-out;
     height: 80px;
-    margin: 20px; }
+    width: 80px; }
+  .body .footer svg {
+    height: 80px;
+    width: 80px; }
   .body .footer .icon:hover circle {
     stroke-dasharray: 220; }

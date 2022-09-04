@@ -3,7 +3,7 @@
     .footer {
 
         display: flex;
-        width: 100vw;
+        width: 100%;
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
@@ -51,7 +51,12 @@
             stroke-dasharray: 150;
             transition: all .8s ease-in-out;
             height: 80px;
-            margin: 20px;
+            width: 80px;
+        }
+
+        svg {
+            height: 80px;
+            width: 80px;
         }
 
         .icon:hover circle {
