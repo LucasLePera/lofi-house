@@ -90,48 +90,6 @@
     padding-right: 1vw; }
   .body .img_lofi_top {
     width: 100vw; }
-  .body .container_footer {
-    display: grid;
-    width: 60vw;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    justify-content: center;
-    grid-auto-flow: row;
-    grid-template-areas: "red_social1 red_social2 red_social3 copy"; }
-  .body .red_social1 {
-    grid-area: red_social1; }
-  .body .red_social2 {
-    grid-area: red_social2; }
-  .body .red_social3 {
-    grid-area: red_social3; }
-  .body .copy_footer {
-    grid-area: copy_footer; }
-  .body .footer a {
-    height: auto;
-    padding: 0 auto; }
-  .body .footer {
-    display: flex;
-    height: auto;
-    width: 100vw;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: auto;
-    font-size: 20px; }
-    .body .footer .logo_facebook {
-      width: 25px;
-      height: 20px; }
-    .body .footer .logo_instagram {
-      width: 15px;
-      height: 15px; }
-    .body .footer .logo_twitter {
-      width: 15px;
-      height: 15px; }
-    .body .footer .copy_footer {
-      display: inline; }
   .body .paragraph_escuchar {
     align-items: center;
     justify-content: center;
@@ -206,10 +164,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "t_shirt_white t_shirt_black pants"
- "sweather-black sweather-white scarf"
- "sneakers hat backpack"
- "backpack2 backpack3 backpack4"; }
+  grid-template-areas: "t_shirt_white t_shirt_black pants" "sweather-black sweather-white scarf" "sneakers hat backpack" "backpack2 backpack3 backpack4"; }
 
 .t_shirt_white {
   grid-area: t_shirt_white; }
@@ -397,10 +352,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "red_social1"
- "red_social2"
- "red_social3"
- "copy"; }
+    grid-template-areas: "red_social1" "red_social2" "red_social3" "copy"; }
   .body .red_social1 {
     grid-area: red_social1;
     display: flex;
@@ -423,7 +375,10 @@
     align-items: center; } }
 
 @media (max-width: 870px) {
-
+  .body {
+    /*Primer bloque de escuchar*/
+    /*ESTILO DEL FORMULARIO DE CONTACTO*/
+    /*PRODUCTOS TIENDA*/ }
     .body .container_escuchar {
       display: block; }
     .body .contact_style {
@@ -487,10 +442,7 @@
       grid-template-rows: 1fr 1fr 1fr 1fr;
       gap: 0px 0px;
       grid-auto-flow: row;
-      grid-template-areas: "red_social1"
- "red_social2"
- "red_social3"
- "copy_footer"; }
+      grid-template-areas: "red_social1" "red_social2" "red_social3" "copy_footer"; }
     .body .red_social1 {
       grid-area: red_social1; }
     .body .red_social2 {
@@ -504,8 +456,7 @@
       grid-template-columns: 1fr;
       grid-template-rows: 1fr auto;
       gap: 0px 0px;
-      grid-template-areas: "img_lofi"
- "content_text_lofi"; }
+      grid-template-areas: "img_lofi" "content_text_lofi"; }
     .body .content_text_lofi {
       grid-area: content_text_lofi;
       width: 90vw;
@@ -522,9 +473,7 @@
       grid-template-rows: 0.5fr 1fr 0.2fr;
       gap: 0px 30px;
       grid-auto-flow: row;
-      grid-template-areas: "paragraph1"
- "paragraph2"
- "paragraph3"; }
+      grid-template-areas: "paragraph1" "paragraph2" "paragraph3"; }
     .body .paragraph1 {
       grid-area: paragraph1;
       align-items: center;
@@ -550,12 +499,7 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       gap: 0px 0px;
-      grid-template-areas: "t_shirt_white t_shirt_black"
- "pants sweather-black"
- "sweather-white scarf"
- "sneakers hat"
- "backpack backpack2"
- "backpack3 backpack4"; }
+      grid-template-areas: "t_shirt_white t_shirt_black" "pants sweather-black" "sweather-white scarf" "sneakers hat" "backpack backpack2" "backpack3 backpack4"; }
     .body .t_shirt_white {
       grid-area: t_shirt_white;
       width: 100%; }
@@ -600,18 +544,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 12fr;
     gap: 0px 0px;
-    grid-template-areas: "t_shirt_white"
- "t_shirt_black"
- "pants"
- "sweather-black"
- "sweather-white"
- "scarf"
- "sneakers"
- "hat"
- "backpack"
- "backpack2"
- "backpack3"
- "backpack4"; }
+    grid-template-areas: "t_shirt_white" "t_shirt_black" "pants" "sweather-black" "sweather-white" "scarf" "sneakers" "hat" "backpack" "backpack2" "backpack3" "backpack4"; }
   .body .t_shirt_white {
     grid-area: t_shirt_white;
     width: 100%; }
@@ -650,7 +583,7 @@
     width: 100%; } }
 
 @media (max-width: 400px) {
-
+  .body {
     /*ESTILO DEL FORMULARIO DE CONTACTO*/ }
     .body .form_contact {
       width: 80vw;
@@ -659,10 +592,10 @@
       background-color: #5b258ecc;
       border-radius: 3px;
       margin-top: 110px;
-      margin-bottom: auto; } 
+      margin-bottom: auto; } }
 
 @media (max-width: 300px) {
-
+  .body {
     /*ESTILO DEL FORMULARIO DE CONTACTO*/ }
     .body .form_contact {
       width: 80vw;
@@ -671,4 +604,45 @@
       background-color: #5b258ecc;
       border-radius: 3px;
       margin-top: 110px;
-      margin-bottom: 110px; } 
+      margin-bottom: 110px; } }
+
+.body .footer {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .body .footer .icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer; }
+  .body .footer .icon:hover {
+    background-color: #e60073;
+    box-shadow: 0 0 20px #e60073; }
+  .body .footer .icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2; }
+  .body .footer .icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366; }
+  .body .footer .icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow: 0 0 20px #1da1f2; }
+  .body .footer .icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.0rem; }
+  .body .footer svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+    height: 80px;
+    margin: 20px; }
+  .body .footer .icon:hover circle {
+    stroke-dasharray: 220; }
