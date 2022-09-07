@@ -1,0 +1,27 @@
+Mejoras de SEO:
+
+index.html:
+
+- Optimización de imagen con clase "img_lofi_top" del index.html.
+- keywords: "Lo-Fi,Lo-Fi Music,Música Lo-Fi,Lofi."
+- description: "🤔 ¿Qué es la música lo-Fi? 👉 LO-FI es una abreviatura de 【 'low-fidelity' 】 que en español significa baja calidad...".
+
+lofi.html:
+
+- keywords: "Lo-Fi,Lo-Fi Music,Lo-Fi Style,Lo-Fi Girl".
+- description: "🤔 ¿Qué es el Lo-Fi y cómo nació la Música Lo-Fi? TODO lo que necesitas saber 👆".
+
+escuchar.html:
+
+- keywords: "Escuchar Lo-Fi,Lo-Fi Music,Artistas Lo-Fi,Top mejor música Lo-Fi,Lo-Fi Hip-Hop."
+- description: "▷ La mejor Música Lo-Fi para estudiar, trabajar y disfrutar en tu tiempo libre".
+
+tienda.html:
+
+- keywords: "Lo-Fi,Ropa Lo-Fi,Comprar Lo-Fi,Tienda Lo-Fi Style".
+- description: "⭐⭐⭐⭐⭐ La mejor TIENDA de ropa y artículos Lo-Fi ☝".
+
+contacto.html:
+
+- keywords: "Lo-Fi,Lo-Fi Music,Contacto Lo-Fi House".
+- description: "☎️ Medio de contacto de Lo-Fi House".
