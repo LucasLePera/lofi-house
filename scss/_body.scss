@@ -1,13 +1,14 @@
+@import './variables/variables.scss';
+
 .body {
 
-    color: #151515;
     background-color: white;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
     width: 100% !important;
     overflow-x: hidden;
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
+    background: $clr_bground;
     background-blend-mode: multiply;
 
     .main {
@@ -40,7 +41,7 @@
 
         a:hover {
 
-            color: #5B258F;
+            color: $clr_hover_navmenu;
             transform: scale(0.8);
             -webkit-transform: scale(0.8);
             -ms-transform: scale(0.8);
