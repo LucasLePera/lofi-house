@@ -66,8 +66,8 @@
     align-items: center;
     width: 100%; }
   .body p {
-    align-items: center;
     width: 100%;
+    text-align: justify;
     font-size: 20px; }
   .body a {
     text-decoration: none;

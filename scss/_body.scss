@@ -101,7 +101,8 @@
 
     p {
 
-        @include text_center;
+        width: 100%;
+        text-align: justify;
         font-size: 20px;
 
     }
