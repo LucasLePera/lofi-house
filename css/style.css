@@ -4,53 +4,50 @@
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box;
-  color: white; }
+  color: white;
+  border: solid 2px red; }
 
 .body {
-  background-color: white;
   flex-direction: column;
-  align-items: center;
   overflow-x: hidden;
+  align-items: center;
   width: 100% !important;
   overflow-x: hidden;
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
-  background-blend-mode: multiply;
-  /*Bloque de escuchar.html con video a la izquierda y texto a la derecha*/
-  /*Bloque de escuchar.html con video a la derecha y texto a la izquierda*/ }
+  background-blend-mode: multiply; }
   .body .main {
     align-content: center;
     padding-bottom: 10px;
     width: 100%; }
   .body .nav_menu {
     /*Customización nav menu*/
-    background-color: #000;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     color: white;
     height: auto;
     font-size: 20px; }
     .body .nav_menu a {
       text-decoration: none;
-      color: white;
       height: 100%;
       font-size: 22px;
       font-weight: 600;
       padding-right: 1vw; }
     .body .nav_menu a:hover {
-      color: #5B258F;
-      transform: scale(0.8);
-      -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8); }
+      color: #5B258F; }
     .body .nav_menu .logo_header {
       height: 60px; }
+    .body .nav_menu .logo_header:hover {
+      transform: scale(1.3);
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3); }
     .body .nav_menu .carrito_compras {
       height: 30px; }
     .body .nav_menu .carrito_compras:hover {
-      transform: scale(0.8);
-      -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8); }
+      transform: scale(1.3);
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3); }
     .body .nav_menu .img_lofi_top {
-      width: 100vw; }
+      width: 100%; }
   .body h1 {
     display: flex;
     padding-top: 10px;
@@ -63,69 +60,28 @@
     display: flex;
     align-items: center;
     justify-content: center; }
-  .body p {
-    text-align: center;
-    width: 100%; }
   .body h2 {
-    text-align: center;
+    align-items: center;
     width: 100%; }
   .body h3 {
-    text-align: center;
+    align-items: center;
     width: 100%; }
   .body p {
     align-items: center;
-    text-align: justify;
-    font-size: 20px;
-    width: 100%; }
+    width: 100%;
+    font-size: 20px; }
   .body a {
     text-decoration: none;
     color: white;
     font-size: 22px;
     font-weight: 600;
     padding-right: 1vw; }
+  .body .footer {
+    height: 100%; }
   .body .body_contact {
-    height: 100%;
-    color: black; }
+    height: 100%; }
   .body .img_lofi_top {
-    width: 100vw; }
-  .body .paragraph_escuchar {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    justify-items: center; }
-  .body .iframe_video {
-    width: 40vw;
-    height: 430px;
-    border: 0; }
-  .body .container_escuchar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    grid-auto-flow: row;
-    grid-template-areas: "content-text video-music"; }
-  .body .content-text {
-    grid-area: content-text; }
-  .body .video-music {
-    grid-area: video-music;
-    display: flex;
-    justify-content: center; }
-  .body .container_escuchar2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    align-items: center;
-    grid-auto-flow: row;
-    grid-template-areas: "video-music2 content-text2"; }
-  .body .content-text2 {
-    align-items: center;
-    padding-top: 0 auto;
-    padding-bottom: 0 auto; }
-  .body .video-music2 {
-    grid-area: video-music2;
-    display: flex;
-    justify-content: center; }
+    width: 100%; }
   .body .img_lofi {
     width: 40vw; }
   .body .lofi_text_top {
@@ -141,19 +97,19 @@
     grid-area: paragraph1;
     align-items: center;
     justify-content: center;
-    width: 30vw; }
+    width: 100%; }
   .body .paragraph2 {
     grid-area: paragraph2;
-    width: 30vw; }
+    width: 100%; }
   .body .paragraph3 {
     grid-area: paragraph3;
-    width: 30vw; }
+    width: 100%; }
   .body .img_lofi_girl {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: auto 0;
     width: 100%;
+    padding: auto 0;
     height: auto; }
 
 /*GRID TIENDA*/
@@ -269,44 +225,10 @@
   .tienda_product_galery .product-links a:hover {
     color: red; }
 
-@media (max-width: 1000px) {
-  .body .container_footer {
-    display: grid;
-    width: 20vw;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "red_social1" "red_social2" "red_social3" "copy"; }
-  .body .red_social1 {
-    grid-area: red_social1;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .body .red_social2 {
-    grid-area: red_social2;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .body .red_social3 {
-    grid-area: red_social3;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .body .copy_footer {
-    grid-area: copy_footer;
-    display: flex;
-    justify-content: center;
-    align-items: center; } }
-
 @media (max-width: 870px) {
   .body {
-    /*Primer bloque de escuchar*/
     /*ESTILO DEL FORMULARIO DE CONTACTO*/
     /*PRODUCTOS TIENDA*/ }
-    .body .container_escuchar {
-      display: block; }
     .body .contact_style {
       background-image: url(https://cdna.artstation.com/p/assets/images/images/038/793/958/large/facundo-giovannone-lofilevelsequence-3574.jpg?1624069696);
       background-repeat: no-repeat;
@@ -314,50 +236,6 @@
       position: center;
       height: 100vh;
       color: white; }
-    .body .contact_footer {
-      display: flex;
-      position: fixed;
-      bottom: 0;
-      width: 100vw;
-      background-color: #000000cc;
-      color: white;
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: center;
-      height: auto;
-      font-size: 20px; }
-    .body .paragraph_escuchar {
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      justify-items: center; }
-    .body .content-text {
-      align-items: center;
-      justify-content: center;
-      padding-top: 0 auto;
-      padding-bottom: 0 auto;
-      width: 100%; }
-    .body .video-music {
-      display: flex;
-      justify-content: center;
-      width: 100%; }
-    .body .container_escuchar2 {
-      display: block; }
-    .body .content-text2 {
-      align-items: center;
-      padding-top: 0 auto;
-      padding-bottom: 0 auto;
-      width: 100%; }
-    .body .video-music2 {
-      display: flex;
-      justify-content: center;
-      width: 100%; }
-    .body .iframe_video {
-      width: 100%;
-      height: 430px;
-      border: 0; }
-    .body .container_escuchar {
-      justify-content: center; }
     .body .fond_img {
       width: 100%; }
     .body .footer {
@@ -385,12 +263,12 @@
       grid-template-areas: "img_lofi" "content_text_lofi"; }
     .body .content_text_lofi {
       grid-area: content_text_lofi;
-      width: 90vw;
+      width: 90%;
       justify-content: center;
       align-items: center; }
     .body .img_lofi {
       grid-area: img_lofi;
-      width: 90vw;
+      width: 90%;
       justify-content: center;
       align-items: center; }
     .body .lofi_text_top {
@@ -404,13 +282,13 @@
       grid-area: paragraph1;
       align-items: center;
       justify-content: center;
-      width: 90vw; }
+      width: 100%; }
     .body .paragraph2 {
       grid-area: paragraph2;
-      width: 90vw; }
+      width: 100%; }
     .body .paragraph3 {
       grid-area: paragraph3;
-      width: 90vw; }
+      width: 100%; }
     .body .form_contact {
       width: 80vw;
       margin: 0 auto;
@@ -534,9 +412,10 @@
 
 .footer {
   display: flex;
-  width: 100%;
   align-items: center;
+  width: 100%;
   flex-wrap: wrap;
+  width: 100%;
   justify-content: center; }
   .footer .icon {
     position: relative;
@@ -575,3 +454,264 @@
     width: 80px; }
   .footer .icon:hover circle {
     stroke-dasharray: 220; }
+
+@media (max-width: 870px) {
+  .body {
+    /*ESTILO DEL FORMULARIO DE CONTACTO*/
+    /*PRODUCTOS TIENDA*/ }
+    .body .contact_style {
+      background-image: url(https://cdna.artstation.com/p/assets/images/images/038/793/958/large/facundo-giovannone-lofilevelsequence-3574.jpg?1624069696);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: center;
+      height: 100vh;
+      color: white; }
+    .body .fond_img {
+      width: 100%; }
+    .body .footer {
+      flex-direction: grid; }
+    .body .container_footer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas: "red_social1" "red_social2" "red_social3" "copy_footer"; }
+    .body .red_social1 {
+      grid-area: red_social1; }
+    .body .red_social2 {
+      grid-area: red_social2; }
+    .body .red_social3 {
+      grid-area: red_social3; }
+    .body .copy_footer {
+      grid-area: copy_footer; }
+    .body .container_lofi {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+      gap: 0px 0px;
+      grid-template-areas: "img_lofi" "content_text_lofi"; }
+    .body .content_text_lofi {
+      grid-area: content_text_lofi;
+      width: 90%;
+      justify-content: center;
+      align-items: center; }
+    .body .img_lofi {
+      grid-area: img_lofi;
+      width: 90%;
+      justify-content: center;
+      align-items: center; }
+    .body .lofi_text_top {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr 0.2fr;
+      gap: 0px 30px;
+      grid-auto-flow: row;
+      grid-template-areas: "paragraph1" "paragraph2" "paragraph3"; }
+    .body .paragraph1 {
+      grid-area: paragraph1;
+      align-items: center;
+      justify-content: center;
+      width: 100%; }
+    .body .paragraph2 {
+      grid-area: paragraph2;
+      width: 100%; }
+    .body .paragraph3 {
+      grid-area: paragraph3;
+      width: 100%; }
+    .body .form_contact {
+      width: 80vw;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #5b258ecc;
+      border-radius: 3px;
+      margin-top: 110px;
+      margin-bottom: 110px; }
+    .body .tienda_product_galery {
+      display: grid;
+      width: 80vw;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "t_shirt_white t_shirt_black" "pants sweather-black" "sweather-white scarf" "sneakers hat" "backpack backpack2" "backpack3 backpack4"; }
+    .body .t_shirt_white {
+      grid-area: t_shirt_white;
+      width: 100%; }
+    .body .t_shirt_black {
+      grid-area: t_shirt_black;
+      width: 100%; }
+    .body .pants {
+      grid-area: pants;
+      width: 100%; }
+    .body .sweather-black {
+      grid-area: sweather-black;
+      width: 100%; }
+    .body .sweather-white {
+      grid-area: sweather-white;
+      width: 100%; }
+    .body .scarf {
+      grid-area: scarf;
+      width: 100%; }
+    .body .sneakers {
+      grid-area: sneakers;
+      width: 100%; }
+    .body .hat {
+      grid-area: hat;
+      width: 100%; }
+    .body .backpack {
+      grid-area: backpack;
+      width: 100%; }
+    .body .backpack2 {
+      grid-area: backpack2;
+      width: 100%; }
+    .body .backpack3 {
+      grid-area: backpack3;
+      width: 100%; }
+    .body .backpack4 {
+      grid-area: backpack4;
+      width: 100%; } }
+
+@media (max-width: 600px) {
+  .body .tienda_product_galery {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12fr;
+    gap: 0px 0px;
+    grid-template-areas: "t_shirt_white" "t_shirt_black" "pants" "sweather-black" "sweather-white" "scarf" "sneakers" "hat" "backpack" "backpack2" "backpack3" "backpack4"; }
+  .body .t_shirt_white {
+    grid-area: t_shirt_white;
+    width: 100%; }
+  .body .t_shirt_black {
+    grid-area: t_shirt_black;
+    width: 100%; }
+  .body .pants {
+    grid-area: pants;
+    width: 100%; }
+  .body .sweather-black {
+    grid-area: sweather-black;
+    width: 100%; }
+  .body .sweather-white {
+    grid-area: sweather-white;
+    width: 100%; }
+  .body .scarf {
+    grid-area: scarf;
+    width: 100%; }
+  .body .sneakers {
+    grid-area: sneakers;
+    width: 100%; }
+  .body .hat {
+    grid-area: hat;
+    width: 100%; }
+  .body .backpack {
+    grid-area: backpack;
+    width: 100%; }
+  .body .backpack2 {
+    grid-area: backpack2;
+    width: 100%; }
+  .body .backpack3 {
+    grid-area: backpack3;
+    width: 100%; }
+  .body .backpack4 {
+    grid-area: backpack4;
+    width: 100%; } }
+
+@media (max-width: 400px) {
+  .body {
+    /*ESTILO DEL FORMULARIO DE CONTACTO*/ }
+    .body .form_contact {
+      width: 80vw;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #5b258ecc;
+      border-radius: 3px;
+      margin-top: 110px;
+      margin-bottom: auto; } }
+
+@media (max-width: 300px) {
+  .body {
+    /*ESTILO DEL FORMULARIO DE CONTACTO*/ }
+    .body .form_contact {
+      width: 80vw;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #5b258ecc;
+      border-radius: 3px;
+      margin-top: 110px;
+      margin-bottom: 110px; } }
+
+.paragraph_escuchar {
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  justify-items: center; }
+
+.iframe_video {
+  width: 80%;
+  height: 430px;
+  border: 0; }
+
+.container_escuchar_mother, .container_escuchar, .container_escuchar2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-auto-flow: row; }
+
+/*Bloque de escuchar.html con video a la izquierda y texto a la derecha*/
+.container_escuchar {
+  grid-template-areas: "content-text video-music"; }
+  .container_escuchar .content-text {
+    grid-area: content-text; }
+  .container_escuchar .video-music {
+    grid-area: video-music;
+    display: flex;
+    justify-content: center; }
+
+/*Bloque de escuchar.html con video a la derecha y texto a la izquierda*/
+.container_escuchar2 {
+  grid-template-areas: "video-music2 content-text2"; }
+  .container_escuchar2 .content-text2 {
+    align-items: center;
+    padding-top: 0 auto;
+    padding-bottom: 0 auto; }
+  .container_escuchar2 .video-music2 {
+    grid-area: video-music2;
+    display: flex;
+    justify-content: center; }
+
+@media (max-width: 870px) {
+  .container_escuchar {
+    display: block; }
+  .paragraph_escuchar {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    justify-items: center; }
+  .content-text {
+    justify-content: center;
+    padding-top: 0 auto;
+    padding-bottom: 0 auto;
+    align-items: center;
+    width: 100%; }
+  .video-music {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  .container_escuchar2 {
+    display: block; }
+  .content-text2 {
+    padding-top: 0 auto;
+    padding-bottom: 0 auto;
+    align-items: center;
+    width: 100%; }
+  .video-music2 {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  .iframe_video {
+    width: 100%;
+    height: 430px;
+    border: 0; }
+  .container_escuchar {
+    justify-content: center; } }

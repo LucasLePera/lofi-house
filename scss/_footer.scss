@@ -1,9 +1,10 @@
+
 .footer {
 
     display: flex;
-    width: 100%;
-    align-items: center;
+    @include text_center;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
 
     .icon {

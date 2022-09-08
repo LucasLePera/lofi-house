@@ -1,18 +1,18 @@
 @import './variables/variables.scss';
+@import 'mixin';
 
 .body {
 
-    background-color: white;
     flex-direction: column;
-    align-items: center;
     overflow-x: hidden;
+    align-items: center;
     width: 100% !important;
     overflow-x: hidden;
     background: $clr_bground;
     background-blend-mode: multiply;
 
     .main {
-
+    
         align-content: center;
         padding-bottom: 10px;
         width: 100%;
@@ -22,9 +22,8 @@
     .nav_menu {
 
         /*Customización nav menu*/
-        background-color: #000;
         flex-wrap: wrap;
-        width: 100vw;
+        width: 100%;
         color: white;
         height: auto;
         font-size: 20px;
@@ -32,7 +31,6 @@
         a {
 
             text-decoration: none;
-            color: white;
             height: 100%;
             font-size: 22px;
             font-weight: 600;
@@ -42,16 +40,18 @@
         a:hover {
 
             color: $clr_hover_navmenu;
-            transform: scale(0.8);
-            -webkit-transform: scale(0.8);
-            -ms-transform: scale(0.8);
-        
+
         }
 
-        .logo_header{
+        .logo_header {
 
             height: 60px;
 
+        }
+
+        .logo_header:hover {
+
+            @include trnsfm_1_3;
         }
 
         .carrito_compras {
@@ -61,16 +61,13 @@
         }
 
         .carrito_compras:hover {
-        
-            transform: scale(0.8);
-            -webkit-transform: scale(0.8);
-            -ms-transform: scale(0.8);
-        
+
+            @include trnsfm_1_3;
         }
 
         .img_lofi_top {
 
-            width: 100vw;
+            width: 100%;
 
         }
     }
@@ -84,7 +81,7 @@
         font-size: 30px;
         justify-content: center;
         text-align: center;
-    
+
     }
 
     .nav {
@@ -94,27 +91,18 @@
         justify-content: center;
     }
 
-    p {
-        text-align: center;
-        width: 100%;
-    }
-
     h2 {
-        text-align: center;
-        width: 100%;
+        @include text_center;
     }
 
     h3 {
-        text-align: center;
-        width: 100%;
+        @include text_center;
     }
 
     p {
 
-        align-items: center;
-        text-align: justify;
+        @include text_center;
         font-size: 20px;
-        width: 100%;
 
     }
 
@@ -127,99 +115,34 @@
         padding-right: 1vw;
     }
 
-    .body_contact {
+    .footer {
+
         height: 100%;
-        color: black;
-      
+
+    }
+
+    .body_contact {
+
+        height: 100%;
+
     }
 
     .img_lofi_top {
 
-        width: 100vw;
-
-    }
-
-
-    .paragraph_escuchar {
-
-        align-items: center;
-        justify-content: center;
         width: 100%;
-        justify-items: center;
-    
+
     }
-    
-    
-    .iframe_video {
-    
-        width: 40vw;
-        height: 430px;
-        border: 0;
-    
-    }
-    
-    
-    /*Bloque de escuchar.html con video a la izquierda y texto a la derecha*/
-    .container_escuchar {
-    
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        align-items: center;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "content-text video-music";
-    
-    }
-    
-    .content-text {
-        grid-area: content-text;
-    }
-    
-    .video-music {
-        grid-area: video-music;
-        display: flex;
-        justify-content: center;
-    
-    }
-    
-    /*Bloque de escuchar.html con video a la derecha y texto a la izquierda*/
-    .container_escuchar2 {
-    
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 0px 0px;
-        align-items: center;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "video-music2 content-text2";
-    }
-    
-    .content-text2 {
-        align-items: center;
-        padding-top: 0 auto;
-        padding-bottom: 0 auto;
-    
-    }
-    
-    .video-music2 {
-        grid-area: video-music2;
-        display: flex;
-        justify-content: center;
-    
-    }
-    
+
     .img_lofi {
-    
+
         width: 40vw;
-    
+
     }
-    
-    
+
+
     .lofi_text_top {
-    
-    
+
+
         display: grid;
         justify-items: center;
         width: 100%;
@@ -230,34 +153,33 @@
         grid-template-areas:
             "paragraph1 paragraph2 paragraph3";
     }
-    
+
     .paragraph1 {
         grid-area: paragraph1;
         align-items: center;
         justify-content: center;
-        width: 30vw;
+        width: 100%;
     }
-    
+
     .paragraph2 {
         grid-area: paragraph2;
-        width: 30vw;
-    
+        width: 100%;
+
     }
-    
+
     .paragraph3 {
         grid-area: paragraph3;
-        width: 30vw;
-    
+        width: 100%;
+
     }
-    
+
     .img_lofi_girl {
-    
+
         display: flex;
         justify-content: center;
-        align-items: center;
+        @include text_center;
         padding: auto 0;
-        width: 100%;
         height: auto;
     }
-    
+
 }

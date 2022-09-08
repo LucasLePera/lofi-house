@@ -1,61 +1,7 @@
+@import 'mixin';
 .body{
-@media (max-width: 1000px) {
-
-    .container_footer {
-
-        display: grid;
-        width: 20vw;
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "red_social1"
-            "red_social2"
-            "red_social3"
-            "copy";
-    }
-
-    .red_social1 {
-        grid-area: red_social1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .red_social2 {
-        grid-area: red_social2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .red_social3 {
-        grid-area: red_social3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .copy_footer {
-        grid-area: copy_footer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-
-}
 
 @media (max-width: 870px) {
-
-
-    .container_escuchar {
-
-        display: block;
-    }
 
     .contact_style {
 
@@ -66,80 +12,6 @@
         position: center;
         height: 100vh;
         color: white;
-    }
-
-    .contact_footer {
-
-        display: flex;
-        position: fixed;
-        bottom: 0;
-        width: 100vw;
-        background-color: #000000cc;
-        color: white;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: auto;
-        font-size: 20px;
-
-    }
-
-    /*Primer bloque de escuchar*/
-    .paragraph_escuchar {
-
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        justify-items: center;
-
-    }
-
-    .content-text {
-        align-items: center;
-        justify-content: center;
-        padding-top: 0 auto;
-        padding-bottom: 0 auto;
-        width: 100%;
-
-    }
-
-    .video-music {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .container_escuchar2 {
-
-        display: block;
-    }
-
-    .content-text2 {
-        align-items: center;
-        padding-top: 0 auto;
-        padding-bottom: 0 auto;
-        width: 100%;
-
-    }
-
-    .video-music2 {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .iframe_video {
-
-        width: 100%;
-        height: 430px;
-        border: 0;
-
-    }
-
-    .container_escuchar {
-
-        justify-content: center;
-
     }
 
     .fond_img {
@@ -195,7 +67,7 @@
 
     .content_text_lofi {
         grid-area: content_text_lofi;
-        width: 90vw;
+        width: 90%;
         justify-content: center;
         align-items: center;
 
@@ -204,7 +76,7 @@
     .img_lofi {
         grid-area: img_lofi;
 
-        width: 90vw;
+        width: 90%;
         justify-content: center;
         align-items: center;
 
@@ -228,17 +100,17 @@
         grid-area: paragraph1;
         align-items: center;
         justify-content: center;
-        width: 90vw;
+        width: 100%;
     }
 
     .paragraph2 {
         grid-area: paragraph2;
-        width: 90vw;
+        width: 100%;
     }
 
     .paragraph3 {
         grid-area: paragraph3;
-        width: 90vw;
+        width: 100%;
     }
 
     /*ESTILO DEL FORMULARIO DE CONTACTO*/
