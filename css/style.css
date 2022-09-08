@@ -239,21 +239,6 @@
       width: 100%; }
     .body .footer {
       flex-direction: grid; }
-    .body .container_footer {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      gap: 0px 0px;
-      grid-auto-flow: row;
-      grid-template-areas: "red_social1" "red_social2" "red_social3" "copy_footer"; }
-    .body .red_social1 {
-      grid-area: red_social1; }
-    .body .red_social2 {
-      grid-area: red_social2; }
-    .body .red_social3 {
-      grid-area: red_social3; }
-    .body .copy_footer {
-      grid-area: copy_footer; }
     .body .container_lofi {
       display: grid;
       grid-template-columns: 1fr;
@@ -274,7 +259,7 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 0.5fr 1fr 0.2fr;
-      gap: 0px 30px;
+      gap: 0px;
       grid-auto-flow: row;
       grid-template-areas: "paragraph1" "paragraph2" "paragraph3"; }
     .body .paragraph1 {
@@ -469,21 +454,6 @@
       width: 100%; }
     .body .footer {
       flex-direction: grid; }
-    .body .container_footer {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      gap: 0px 0px;
-      grid-auto-flow: row;
-      grid-template-areas: "red_social1" "red_social2" "red_social3" "copy_footer"; }
-    .body .red_social1 {
-      grid-area: red_social1; }
-    .body .red_social2 {
-      grid-area: red_social2; }
-    .body .red_social3 {
-      grid-area: red_social3; }
-    .body .copy_footer {
-      grid-area: copy_footer; }
     .body .container_lofi {
       display: grid;
       grid-template-columns: 1fr;
@@ -504,7 +474,7 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 0.5fr 1fr 0.2fr;
-      gap: 0px 30px;
+      gap: 0px;
       grid-auto-flow: row;
       grid-template-areas: "paragraph1" "paragraph2" "paragraph3"; }
     .body .paragraph1 {
