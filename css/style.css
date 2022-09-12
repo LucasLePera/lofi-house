@@ -162,15 +162,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 400px;
-      padding: 30px;
-      background: #f0f0f0; }
-    .tienda_product_galery .product-card .product-tumb-off {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 400px;
-      padding: 5px;
+      max-height: 300px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 0px;
+      padding-bottom: 0px;
       background: #f0f0f0; }
     .tienda_product_galery .product-card .product-tumb img {
       max-width: 100%;
@@ -365,15 +361,6 @@
     .body .backpack4 {
       grid-area: backpack4;
       width: 100%; } }
-
-@media (max-width: 600px) {
-  .body .product-tumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    padding: 50px;
-    background: #f0f0f0; } }
 
 @media (max-width: 500px) {
   .body .tienda_product_galery {
@@ -575,15 +562,6 @@
     .body .backpack4 {
       grid-area: backpack4;
       width: 100%; } }
-
-@media (max-width: 600px) {
-  .body .product-tumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    padding: 50px;
-    background: #f0f0f0; } }
 
 @media (max-width: 500px) {
   .body .tienda_product_galery {
