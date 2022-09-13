@@ -45,12 +45,14 @@
         .logo_header {
 
             height: 60px;
+            margin-top: 5px;
+            margin-bottom: 5px;
 
         }
 
         .logo_header:hover {
 
-            @include trnsfm_1_3;
+            @include trnsfm_1_1;
         }
 
         .carrito_compras {

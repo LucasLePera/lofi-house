@@ -34,11 +34,13 @@
     .body .nav_menu a:hover {
       color: #5B258F; }
     .body .nav_menu .logo_header {
-      height: 60px; }
+      height: 60px;
+      margin-top: 5px;
+      margin-bottom: 5px; }
     .body .nav_menu .logo_header:hover {
-      transform: scale(1.3);
-      -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3); }
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1); }
     .body .nav_menu .carrito_compras {
       height: 30px; }
     .body .nav_menu .carrito_compras:hover {
