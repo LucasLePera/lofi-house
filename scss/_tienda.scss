@@ -93,9 +93,10 @@
             max-height: 300px;
             padding-left: 30px;
             padding-right: 30px;
-            padding-top: 0px;
-            padding-bottom: 0px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             background: #f0f0f0;
+            overflow-y: hidden; 
         }
 
         .product-tumb img {
