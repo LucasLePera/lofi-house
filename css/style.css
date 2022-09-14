@@ -5,7 +5,8 @@
   font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box;
   color: white;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-display: swap; }
 
 .body {
   flex-direction: column;
