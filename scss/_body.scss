@@ -10,14 +10,6 @@
     background: $clr_bground;
     background-blend-mode: multiply;
 
-    .main {
-    
-        align-content: center;
-        padding-bottom: 10px;
-        width: 100%;
-
-    }
-
     .nav_menu {
 
         /*Customización nav menu*/
@@ -26,6 +18,10 @@
         color: white;
         height: auto;
         font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
 
         a {
 
@@ -34,12 +30,23 @@
             font-size: 22px;
             font-weight: 600;
             padding-right: 1vw;
-        }
 
-        a:hover {
+            &:hover {
 
-            color: $clr_hover_navmenu;
+                color: $clr_hover_navmenu;
+            
+            }
 
+            .carrito_compras {
+
+                height: 30px;
+                &:hover {
+
+                    color: $clr_hover_navmenu;
+                    @include trnsfm_1_3;
+                
+                }
+            }
         }
 
         .logo_header {
@@ -48,49 +55,40 @@
             margin-top: 5px;
             margin-bottom: 5px;
 
+            &:hover {
+
+                @include trnsfm_1_1;
+
+            }
         }
 
-        .logo_header:hover {
-
-            @include trnsfm_1_1;
-        }
-
-        .carrito_compras {
-
-            height: 30px;
-
-        }
-
-        .carrito_compras:hover {
-
-            @include trnsfm_1_3;
-        }
-
-        .img_lofi_top {
-
-            width: 100%;
-
-        }
     }
 
-    h1 {
+    .img_lofi_top {
 
-        display: flex;
-        padding-top: 10px;
+        width: 100%;
+
+    }
+
+    .main {
+
+        align-content: center;
         padding-bottom: 10px;
         width: 100%;
-        font-size: 30px;
-        justify-content: center;
-        text-align: center;
 
+        h1 {
+
+            display: flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+            font-size: 30px;
+            justify-content: center;
+            text-align: center;
+    
+        }
     }
 
-    .nav {
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     h2 {
         @include text_center;
@@ -115,11 +113,6 @@
         font-size: 22px;
         font-weight: 600;
         padding-right: 1vw;
-    }
-
-    .footer {
-
-        height: 100%;
 
     }
 
@@ -129,21 +122,13 @@
 
     }
 
-    .img_lofi_top {
-
-        width: 100%;
-
-    }
-
     .img_lofi {
 
         width: 40vw;
 
     }
 
-
     .lofi_text_top {
-
 
         display: grid;
         justify-items: center;
@@ -154,22 +139,27 @@
         grid-auto-flow: row;
         grid-template-areas:
             "paragraph1 paragraph2 paragraph3";
+
     }
 
     .paragraph1 {
+
         grid-area: paragraph1;
         align-items: center;
         justify-content: center;
         width: 100%;
+
     }
 
     .paragraph2 {
+
         grid-area: paragraph2;
         width: 100%;
 
     }
 
     .paragraph3 {
+
         grid-area: paragraph3;
         width: 100%;
 
@@ -182,6 +172,12 @@
         @include text_center;
         padding: auto 0;
         height: auto;
+
     }
 
+    .footer {
+
+        height: 100%;
+
+    }
 }
