@@ -9,6 +9,19 @@
 
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5b258ecc;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #000000e6;
+    border-radius: 5px;
+}
+
 @import './body';
 @import './tienda';
 @import './mediaq';

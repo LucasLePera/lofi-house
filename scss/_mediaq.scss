@@ -1,294 +1,291 @@
 @import 'mixin';
 
-.body {
+@media (max-width: 870px) {
 
-    @media (max-width: 870px) {
-
-        .contact_style {
+    .contact_style {
 
 
-            background-image: url(https://cdna.artstation.com/p/assets/images/images/038/793/958/large/facundo-giovannone-lofilevelsequence-3574.jpg?1624069696);
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: center;
-            height: 100vh;
-            color: white;
-        }
+        background-image: url(https://cdna.artstation.com/p/assets/images/images/038/793/958/large/facundo-giovannone-lofilevelsequence-3574.jpg?1624069696);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: center;
+        height: 100vh;
+        color: white;
+    }
 
-        .fond_img {
-            width: 100%;
-        }
+    .fond_img {
+        width: 100%;
+    }
 
-        .footer {
-            flex-direction: grid;
-        }
+    .footer {
+        flex-direction: grid;
+    }
 
-        .container_lofi {
+    .container_lofi {
 
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr auto;
-            gap: 0px 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        gap: 0px 0px;
 
-            grid-template-areas:
-                "img_lofi"
-                "content_text_lofi";
-        }
+        grid-template-areas:
+            "img_lofi"
+            "content_text_lofi";
+    }
 
-        .content_text_lofi {
-            grid-area: content_text_lofi;
-            width: 90%;
-            justify-content: center;
-            align-items: center;
+    .content_text_lofi {
+        grid-area: content_text_lofi;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
 
-        }
+    }
 
-        .img_lofi {
+    .img_lofi {
 
-            grid-area: img_lofi;
-            width: 90%;
-            justify-content: center;
-            align-items: center;
+        grid-area: img_lofi;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
 
-        }
+    }
 
-        .lofi_text_top {
+    .lofi_text_top {
 
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 1fr 0.2fr;
-            gap: 0px;
-            grid-auto-flow: row;
-            grid-template-areas:
-                "paragraph1"
-                "paragraph2"
-                "paragraph3";
-        }
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 0.2fr;
+        gap: 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "paragraph1"
+            "paragraph2"
+            "paragraph3";
+    }
 
-        .paragraph1 {
+    .paragraph1 {
 
-            grid-area: paragraph1;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
+        grid-area: paragraph1;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 
-        .paragraph2 {
-            grid-area: paragraph2;
-            width: 100%;
-        }
+    .paragraph2 {
+        grid-area: paragraph2;
+        width: 100%;
+    }
 
-        .paragraph3 {
-            grid-area: paragraph3;
-            width: 100%;
-        }
+    .paragraph3 {
+        grid-area: paragraph3;
+        width: 100%;
+    }
 
-        /*ESTILO DEL FORMULARIO DE CONTACTO*/
+    /*ESTILO DEL FORMULARIO DE CONTACTO*/
 
-        .form_contact {
+    .form_contact {
 
-            width: 80vw;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #5b258ecc;
-            border-radius: 3px;
-            margin-top: 110px;
-            margin-bottom: 110px;
+        width: 80vw;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #5b258ecc;
+        border-radius: 3px;
+        margin-top: 110px;
+        margin-bottom: 110px;
 
-        }
-
-
-        /*PRODUCTOS TIENDA*/
+    }
 
 
-        .tienda_product_galery {
+    /*PRODUCTOS TIENDA*/
 
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr*(6);
-            gap: 0px 0px;
-            grid-template-areas:
 
-                "Product1 Product2"
-                "Product3 Product4"
-                "Product5 Product6"
-                "Product7 Product8"
-                "Product9 Product10"
-                "Product11 Product12";
+    .tienda_product_galery {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr*(6);
+        gap: 0px 0px;
+        grid-template-areas:
+
+            "product1 product2"
+            "product3 product4"
+            "product5 product6"
+            "product7 product8"
+            "product9 product10"
+            "product11 product12";
 
 
 
-            .Product1 {
-                grid-area: Product1;
-
-            }
-
-            .Product2 {
-                grid-area: Product2;
-            }
-
-            .Product3 {
-                grid-area: Product3;
-            }
-
-            .Product4 {
-                grid-area: Product4;
-            }
-
-            .Product5 {
-                grid-area: Product5;
-            }
-
-            .Product6 {
-                grid-area: Product6;
-            }
-
-            .Product7 {
-                grid-area: Product7;
-            }
-
-            .Product8 {
-                grid-area: Product8;
-            }
-
-            .Product9 {
-                grid-area: Product9;
-            }
-
-            .Product10 {
-                grid-area: Product10;
-            }
-
-            .Product11 {
-                grid-area: Product11;
-            }
-
-            .Product12 {
-                grid-area: Product12;
-            }
+        .product1 {
+            grid-area: product1;
 
         }
 
-        .t_shirt_white {
-            grid-area: t_shirt_white;
-            width: 100%;
+        .product2 {
+            grid-area: product2;
         }
 
-        .t_shirt_black {
-            grid-area: t_shirt_black;
-            width: 100%;
+        .product3 {
+            grid-area: product3;
         }
 
-        .pants {
-            grid-area: pants;
-            width: 100%;
+        .product4 {
+            grid-area: product4;
         }
 
-        .sweather-black {
-            grid-area: sweather-black;
-            width: 100%;
+        .product5 {
+            grid-area: product5;
         }
 
-        .sweather-white {
-            grid-area: sweather-white;
-            width: 100%;
+        .product6 {
+            grid-area: product6;
         }
 
-        .scarf {
-            grid-area: scarf;
-            width: 100%;
+        .product7 {
+            grid-area: product7;
         }
 
-        .sneakers {
-            grid-area: sneakers;
-            width: 100%;
+        .product8 {
+            grid-area: product8;
         }
 
-        .hat {
-            grid-area: hat;
-            width: 100%;
+        .product9 {
+            grid-area: product9;
         }
 
-        .backpack {
-            grid-area: backpack;
-            width: 100%;
+        .product10 {
+            grid-area: product10;
         }
 
-        .backpack2 {
-            grid-area: backpack2;
-            width: 100%;
+        .product11 {
+            grid-area: product11;
         }
 
-        .backpack3 {
-            grid-area: backpack3;
-            width: 100%;
-        }
-
-        .backpack4 {
-            grid-area: backpack4;
-            width: 100%;
+        .product12 {
+            grid-area: product12;
         }
 
     }
 
-    @media (max-width: 500px) {
-        .tienda_product_galery {
-
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr*(12);
-            gap: 0px 0px;
-            grid-template-areas:
-
-                "Product1"
-                "Product2"
-                "Product3"
-                "Product4"
-                "Product5"
-                "Product6"
-                "Product7"
-                "Product8"
-                "Product9"
-                "Product10"
-                "Product11"
-                "Product12"
-            ;
-
-        }
+    .t_shirt_white {
+        grid-area: t_shirt_white;
+        width: 100%;
     }
 
-    @media (max-width: 400px) {
+    .t_shirt_black {
+        grid-area: t_shirt_black;
+        width: 100%;
+    }
 
-        /*ESTILO DEL FORMULARIO DE CONTACTO*/
+    .pants {
+        grid-area: pants;
+        width: 100%;
+    }
 
-        .form_contact {
+    .sweather-black {
+        grid-area: sweather-black;
+        width: 100%;
+    }
 
-            width: 80vw;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #5b258ecc;
-            border-radius: 3px;
-            margin-top: 110px;
-            margin-bottom: auto;
+    .sweather-white {
+        grid-area: sweather-white;
+        width: 100%;
+    }
 
-        }
+    .scarf {
+        grid-area: scarf;
+        width: 100%;
+    }
+
+    .sneakers {
+        grid-area: sneakers;
+        width: 100%;
+    }
+
+    .hat {
+        grid-area: hat;
+        width: 100%;
+    }
+
+    .backpack {
+        grid-area: backpack;
+        width: 100%;
+    }
+
+    .backpack2 {
+        grid-area: backpack2;
+        width: 100%;
+    }
+
+    .backpack3 {
+        grid-area: backpack3;
+        width: 100%;
+    }
+
+    .backpack4 {
+        grid-area: backpack4;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .tienda_product_galery {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr*(12);
+        gap: 0px 0px;
+        grid-template-areas:
+
+            "product1"
+            "product2"
+            "product3"
+            "product4"
+            "product5"
+            "product6"
+            "product7"
+            "product8"
+            "product9"
+            "product10"
+            "product11"
+            "product12"
+        ;
+
+    }
+}
+
+@media (max-width: 400px) {
+
+    /*ESTILO DEL FORMULARIO DE CONTACTO*/
+
+    .form_contact {
+
+        width: 80vw;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #5b258ecc;
+        border-radius: 3px;
+        margin-top: 110px;
+        margin-bottom: auto;
 
     }
 
-    @media (max-width: 300px) {
+}
 
-        /*ESTILO DEL FORMULARIO DE CONTACTO*/
-        .form_contact {
+@media (max-width: 300px) {
 
-            width: 80vw;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #5b258ecc;
-            border-radius: 3px;
-            margin-top: 110px;
-            margin-bottom: 110px;
+    /*ESTILO DEL FORMULARIO DE CONTACTO*/
+    .form_contact {
 
-        }
+        width: 80vw;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #5b258ecc;
+        border-radius: 3px;
+        margin-top: 110px;
+        margin-bottom: 110px;
 
     }
+
 }

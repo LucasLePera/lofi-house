@@ -17,10 +17,8 @@
 @mixin text_center {
 
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-
+    justify-content: center;
+    padding: 10px;
+    
 }

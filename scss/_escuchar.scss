@@ -48,14 +48,15 @@
 
     }
 }
-    /*Bloque de escuchar.html con video a la derecha y texto a la izquierda*/
 
-    .container_escuchar2 {
+/*Bloque de escuchar.html con video a la derecha y texto a la izquierda*/
 
-        @extend .container_escuchar_mother;
+.container_escuchar2 {
 
-        grid-template-areas:
-            "video-music2 content-text2";
+    @extend .container_escuchar_mother;
+
+    grid-template-areas:
+        "video-music2 content-text2";
 
 
     .content-text2 {
@@ -80,6 +81,7 @@
 
         display: block;
     }
+
     .paragraph_escuchar {
 
         @include text_center;
