@@ -18,6 +18,32 @@
   background: #000000e6;
   border-radius: 5px; }
 
+@media (min-width: 760px) {
+  .form_contact {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #5b258ecc;
+    border-radius: 3px;
+    margin-top: 110px;
+    margin-bottom: 110px; }
+  .index_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-template-areas: "index_pharagraph1 index_pharagraph2"; } }
+
+@media (min-width: 760px) and (min-width: 300px) {
+  .form_contact {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #5b258ecc;
+    border-radius: 3px;
+    margin-top: 110px;
+    margin-bottom: auto; } }
+
 .body {
   flex-direction: column;
   overflow-x: hidden;
@@ -25,6 +51,13 @@
   width: 100% !important;
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
   background-blend-mode: multiply; }
+  .body .contact_style {
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/038/793/958/large/facundo-giovannone-lofilevelsequence-3574.jpg?1624069696);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+    height: 100vh;
+    color: white; }
   .body .nav_menu {
     /*Customización nav menu*/
     flex-wrap: wrap;
@@ -36,7 +69,8 @@
     align-items: center;
     justify-content: center; }
     .body .nav_menu li {
-      padding: auto 1vw; }
+      padding: auto 1vw;
+      height: auto; }
       .body .nav_menu li .nav-item {
         height: 100%; }
       .body .nav_menu li a {
@@ -50,25 +84,25 @@
           height: 100%;
           padding: 10px; }
           .body .nav_menu li a .carrito_compras:hover {
-            color: #5B258F;
-            transform: scale(1.3);
-            -webkit-transform: scale(1.3);
-            -ms-transform: scale(1.3); }
+            color: #5B258F; }
         .body .nav_menu li a .logo_header {
           height: 60px;
           margin-top: 5px;
           margin-bottom: 5px; }
-          .body .nav_menu li a .logo_header:hover {
-            transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1); }
   .body .img_lofi_top {
     width: 100%; }
   .body .img-lofi-paragraph {
     width: 100%;
-    margin: 3px; }
+    padding: 10px; }
+  .body .form_contact {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #5b258ecc;
+    border-radius: 3px;
+    margin-top: 110px;
+    margin-bottom: 110px; }
   .body .main {
-    align-content: center;
     padding-top: 20px;
     padding-bottom: 10px;
     width: 100%; }
@@ -98,86 +132,40 @@
     padding-right: 1vw; }
   .body .img_lofi {
     width: 40vw; }
-  .body .lofi_text_top {
+  .body .index_text {
     display: grid;
-    justify-items: center;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0vw;
-    grid-auto-flow: row;
-    grid-template-areas: "paragraph1 paragraph2 paragraph3"; }
-  .body .paragraph1 {
-    grid-area: paragraph1;
-    align-items: center;
-    justify-content: center;
-    width: 100%; }
-  .body .paragraph2 {
-    grid-area: paragraph2;
-    width: 100%; }
-  .body .paragraph3 {
-    grid-area: paragraph3;
-    width: 100%; }
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 10px;
+    grid-template-areas: "index_pharagraph1" "index_pharagraph2"; }
+    .body .index_text .index_pharagraph1 {
+      grid-area: index_pharagraph1;
+      margin-bottom: 10px; }
+    .body .index_text .index_pharagraph2 {
+      grid-area: index_pharagraph2; }
   .body .img_lofi_girl {
     display: flex;
     justify-content: center;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 10px;
     padding: auto 0;
-    height: auto; }
+    width: 100%; }
   .body .footer {
     height: 100%; }
+  .body .iframe_video {
+    width: 100%;
+    height: 300px; }
 
-.tienda_product_galery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "product1 product2 product3" "product4 product5 product6" "product7 product8 product9" "product10 product11 product12";
-  /*PRODUCTO TIENDA*/ }
-  .tienda_product_galery .product1 {
-    grid-area: product1; }
-  .tienda_product_galery .product2 {
-    grid-area: product2; }
-  .tienda_product_galery .product3 {
-    grid-area: product3; }
-  .tienda_product_galery .product4 {
-    grid-area: product4; }
-  .tienda_product_galery .product5 {
-    grid-area: product5; }
-  .tienda_product_galery .product6 {
-    grid-area: product6; }
-  .tienda_product_galery .product7 {
-    grid-area: product7; }
-  .tienda_product_galery .product8 {
-    grid-area: product8; }
-  .tienda_product_galery .product9 {
-    grid-area: product9; }
-  .tienda_product_galery .product10 {
-    grid-area: product10; }
-  .tienda_product_galery .product11 {
-    grid-area: product11; }
-  .tienda_product_galery .product12 {
-    grid-area: product12; }
-  .tienda_product_galery .product-card {
-    width: auto;
+.product-card-container {
+  height: 500px;
+  overflow-x: hidden;
+  height: 550px; }
+  .product-card-container .product-card {
     box-shadow: 0 2px 7px #dfdfdf;
-    margin: 20px;
     background: #fafafa;
-    max-height: 650px; }
-    .tienda_product_galery .product-card .badge {
-      position: absolute;
-      left: 0;
-      top: 20px;
-      text-transform: uppercase;
-      font-size: 13px;
-      font-weight: 700;
-      background: #5B258F;
-      color: #fff;
-      padding: 3px 10px; }
-    .tienda_product_galery .product-card .product-tumb {
+    width: auto;
+    margin: 20px auto;
+    max-width: 280px; }
+    .product-card-container .product-card .product-tumb {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -188,124 +176,84 @@
       padding-bottom: 20px;
       background: #f0f0f0;
       overflow-y: hidden; }
-    .tienda_product_galery .product-card .product-tumb img {
-      max-width: 100%;
-      max-height: 100%; }
-      .tienda_product_galery .product-card .product-tumb img:hover {
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1); }
-    .tienda_product_galery .product-card .product-details {
+      .product-card-container .product-card .product-tumb img {
+        width: auto;
+        max-width: 250px;
+        margin: auto;
+        padding: 10px; }
+        .product-card-container .product-card .product-tumb img:hover {
+          transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1); }
+    .product-card-container .product-card .product-details {
       padding-top: 20px;
       padding-left: 20px;
       padding-right: 20px;
-      padding-bottom: 5px; }
-      .tienda_product_galery .product-card .product-details .product-catagory {
+      padding-bottom: 5px;
+      margin-bottom: auto;
+      height: 250px; }
+      .product-card-container .product-card .product-details .product-catagory {
         display: block;
         font-size: 12px;
         font-weight: 700;
         text-transform: uppercase;
         color: #ccc;
-        margin-bottom: 18px; }
-      .tienda_product_galery .product-card .product-details h4 a {
+        margin-bottom: 5px; }
+      .product-card-container .product-card .product-details .product-details {
+        height: 100%; }
+      .product-card-container .product-card .product-details .product-catagory {
+        margin-bottom: auto; }
+      .product-card-container .product-card .product-details h4 a {
         font-weight: 500;
         display: block;
-        margin-bottom: 18px;
+        text-align: center;
+        margin-bottom: 5px;
         text-transform: uppercase;
         color: #363636;
         text-decoration: none;
         transition: 0.3s;
         padding: 3px; }
-        .tienda_product_galery .product-card .product-details h4 a:hover {
+        .product-card-container .product-card .product-details h4 a:hover {
           color: #5B258F; }
-      .tienda_product_galery .product-card .product-details p {
+      .product-card-container .product-card .product-details p {
         font-size: 15px;
         line-height: 22px;
         margin-bottom: 18px;
         color: #999; }
-      .tienda_product_galery .product-card .product-details .product-bottom-details {
+      .product-card-container .product-card .product-details .product-bottom-details {
         overflow: hidden;
         border-top: 1px solid #eee;
-        padding-top: 20px;
         display: flex;
         justify-content: space-evenly;
+        justify-items: center;
+        align-items: center;
         flex-wrap: wrap; }
-        .tienda_product_galery .product-card .product-details .product-bottom-details .product-price {
+        .product-card-container .product-card .product-details .product-bottom-details .product-price {
           font-size: 18px;
           color: #363636;
           font-weight: 600; }
-          .tienda_product_galery .product-card .product-details .product-bottom-details .product-price small {
+          .product-card-container .product-card .product-details .product-bottom-details .product-price small {
             font-size: 80%;
             font-weight: 400;
             text-decoration: line-through;
             display: inline-block;
             margin-right: 5px;
             color: red; }
-        .tienda_product_galery .product-card .product-details .product-bottom-details .btn-violet {
+        .product-card-container .product-card .product-details .product-bottom-details .btn-violet {
           background-color: #5B258F;
           color: #f0f0f0;
           display: flex;
           justify-content: center; }
-      .tienda_product_galery .product-card .product-details .product-pin-img {
-        height: auto;
-        width: auto;
-        display: flex; }
-      .tienda_product_galery .product-card .product-details .product-links a {
+      .product-card-container .product-card .product-details .product-links a {
         display: inline-block;
         margin-left: 5px;
         color: #e1e1e1;
         transition: 0.3s;
         font-size: 17px; }
-      .tienda_product_galery .product-card .product-details .product-links a:hover {
+      .product-card-container .product-card .product-details .product-links a:hover {
         color: red; }
 
-@media (max-width: 870px) {
-  .contact_style {
-    background-image: url(https://cdna.artstation.com/p/assets/images/images/038/793/958/large/facundo-giovannone-lofilevelsequence-3574.jpg?1624069696);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: center;
-    height: 100vh;
-    color: white; }
-  .fond_img {
-    width: 100%; }
-  .footer {
-    flex-direction: grid; }
-  .container_lofi {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
-    gap: 0px 0px;
-    grid-template-areas: "img_lofi" "content_text_lofi"; }
-  .content_text_lofi {
-    grid-area: content_text_lofi;
-    width: 90%;
-    justify-content: center;
-    align-items: center; }
-  .img_lofi {
-    grid-area: img_lofi;
-    width: 90%;
-    justify-content: center;
-    align-items: center; }
-  .lofi_text_top {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 0.2fr;
-    gap: 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "paragraph1" "paragraph2" "paragraph3"; }
-  .paragraph1 {
-    grid-area: paragraph1;
-    align-items: center;
-    justify-content: center;
-    width: 100%; }
-  .paragraph2 {
-    grid-area: paragraph2;
-    width: 100%; }
-  .paragraph3 {
-    grid-area: paragraph3;
-    width: 100%; }
-  /*ESTILO DEL FORMULARIO DE CONTACTO*/
+@media (min-width: 760px) {
   .form_contact {
     width: 80vw;
     margin: 0 auto;
@@ -314,84 +262,14 @@
     border-radius: 3px;
     margin-top: 110px;
     margin-bottom: 110px; }
-  /*PRODUCTOS TIENDA*/
-  .tienda_product_galery {
+  .index_text {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6fr;
-    gap: 0px 0px;
-    grid-template-areas: "product1 product2" "product3 product4" "product5 product6" "product7 product8" "product9 product10" "product11 product12"; }
-    .tienda_product_galery .product1 {
-      grid-area: product1; }
-    .tienda_product_galery .product2 {
-      grid-area: product2; }
-    .tienda_product_galery .product3 {
-      grid-area: product3; }
-    .tienda_product_galery .product4 {
-      grid-area: product4; }
-    .tienda_product_galery .product5 {
-      grid-area: product5; }
-    .tienda_product_galery .product6 {
-      grid-area: product6; }
-    .tienda_product_galery .product7 {
-      grid-area: product7; }
-    .tienda_product_galery .product8 {
-      grid-area: product8; }
-    .tienda_product_galery .product9 {
-      grid-area: product9; }
-    .tienda_product_galery .product10 {
-      grid-area: product10; }
-    .tienda_product_galery .product11 {
-      grid-area: product11; }
-    .tienda_product_galery .product12 {
-      grid-area: product12; }
-  .t_shirt_white {
-    grid-area: t_shirt_white;
-    width: 100%; }
-  .t_shirt_black {
-    grid-area: t_shirt_black;
-    width: 100%; }
-  .pants {
-    grid-area: pants;
-    width: 100%; }
-  .sweather-black {
-    grid-area: sweather-black;
-    width: 100%; }
-  .sweather-white {
-    grid-area: sweather-white;
-    width: 100%; }
-  .scarf {
-    grid-area: scarf;
-    width: 100%; }
-  .sneakers {
-    grid-area: sneakers;
-    width: 100%; }
-  .hat {
-    grid-area: hat;
-    width: 100%; }
-  .backpack {
-    grid-area: backpack;
-    width: 100%; }
-  .backpack2 {
-    grid-area: backpack2;
-    width: 100%; }
-  .backpack3 {
-    grid-area: backpack3;
-    width: 100%; }
-  .backpack4 {
-    grid-area: backpack4;
-    width: 100%; } }
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-template-areas: "index_pharagraph1 index_pharagraph2"; } }
 
-@media (max-width: 500px) {
-  .tienda_product_galery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 12fr;
-    gap: 0px 0px;
-    grid-template-areas: "product1" "product2" "product3" "product4" "product5" "product6" "product7" "product8" "product9" "product10" "product11" "product12"; } }
-
-@media (max-width: 400px) {
-  /*ESTILO DEL FORMULARIO DE CONTACTO*/
+@media (min-width: 760px) and (min-width: 300px) {
   .form_contact {
     width: 80vw;
     margin: 0 auto;
@@ -400,17 +278,6 @@
     border-radius: 3px;
     margin-top: 110px;
     margin-bottom: auto; } }
-
-@media (max-width: 300px) {
-  /*ESTILO DEL FORMULARIO DE CONTACTO*/
-  .form_contact {
-    width: 80vw;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #5b258ecc;
-    border-radius: 3px;
-    margin-top: 110px;
-    margin-bottom: 110px; } }
 
 .footer {
   display: flex;
@@ -458,240 +325,3 @@
     width: 80px; }
   .footer .icon:hover circle {
     stroke-dasharray: 220; }
-
-@media (max-width: 870px) {
-  .contact_style {
-    background-image: url(https://cdna.artstation.com/p/assets/images/images/038/793/958/large/facundo-giovannone-lofilevelsequence-3574.jpg?1624069696);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: center;
-    height: 100vh;
-    color: white; }
-  .fond_img {
-    width: 100%; }
-  .footer {
-    flex-direction: grid; }
-  .container_lofi {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
-    gap: 0px 0px;
-    grid-template-areas: "img_lofi" "content_text_lofi"; }
-  .content_text_lofi {
-    grid-area: content_text_lofi;
-    width: 90%;
-    justify-content: center;
-    align-items: center; }
-  .img_lofi {
-    grid-area: img_lofi;
-    width: 90%;
-    justify-content: center;
-    align-items: center; }
-  .lofi_text_top {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 0.2fr;
-    gap: 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "paragraph1" "paragraph2" "paragraph3"; }
-  .paragraph1 {
-    grid-area: paragraph1;
-    align-items: center;
-    justify-content: center;
-    width: 100%; }
-  .paragraph2 {
-    grid-area: paragraph2;
-    width: 100%; }
-  .paragraph3 {
-    grid-area: paragraph3;
-    width: 100%; }
-  /*ESTILO DEL FORMULARIO DE CONTACTO*/
-  .form_contact {
-    width: 80vw;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #5b258ecc;
-    border-radius: 3px;
-    margin-top: 110px;
-    margin-bottom: 110px; }
-  /*PRODUCTOS TIENDA*/
-  .tienda_product_galery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6fr;
-    gap: 0px 0px;
-    grid-template-areas: "product1 product2" "product3 product4" "product5 product6" "product7 product8" "product9 product10" "product11 product12"; }
-    .tienda_product_galery .product1 {
-      grid-area: product1; }
-    .tienda_product_galery .product2 {
-      grid-area: product2; }
-    .tienda_product_galery .product3 {
-      grid-area: product3; }
-    .tienda_product_galery .product4 {
-      grid-area: product4; }
-    .tienda_product_galery .product5 {
-      grid-area: product5; }
-    .tienda_product_galery .product6 {
-      grid-area: product6; }
-    .tienda_product_galery .product7 {
-      grid-area: product7; }
-    .tienda_product_galery .product8 {
-      grid-area: product8; }
-    .tienda_product_galery .product9 {
-      grid-area: product9; }
-    .tienda_product_galery .product10 {
-      grid-area: product10; }
-    .tienda_product_galery .product11 {
-      grid-area: product11; }
-    .tienda_product_galery .product12 {
-      grid-area: product12; }
-  .t_shirt_white {
-    grid-area: t_shirt_white;
-    width: 100%; }
-  .t_shirt_black {
-    grid-area: t_shirt_black;
-    width: 100%; }
-  .pants {
-    grid-area: pants;
-    width: 100%; }
-  .sweather-black {
-    grid-area: sweather-black;
-    width: 100%; }
-  .sweather-white {
-    grid-area: sweather-white;
-    width: 100%; }
-  .scarf {
-    grid-area: scarf;
-    width: 100%; }
-  .sneakers {
-    grid-area: sneakers;
-    width: 100%; }
-  .hat {
-    grid-area: hat;
-    width: 100%; }
-  .backpack {
-    grid-area: backpack;
-    width: 100%; }
-  .backpack2 {
-    grid-area: backpack2;
-    width: 100%; }
-  .backpack3 {
-    grid-area: backpack3;
-    width: 100%; }
-  .backpack4 {
-    grid-area: backpack4;
-    width: 100%; } }
-
-@media (max-width: 500px) {
-  .tienda_product_galery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 12fr;
-    gap: 0px 0px;
-    grid-template-areas: "product1" "product2" "product3" "product4" "product5" "product6" "product7" "product8" "product9" "product10" "product11" "product12"; } }
-
-@media (max-width: 400px) {
-  /*ESTILO DEL FORMULARIO DE CONTACTO*/
-  .form_contact {
-    width: 80vw;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #5b258ecc;
-    border-radius: 3px;
-    margin-top: 110px;
-    margin-bottom: auto; } }
-
-@media (max-width: 300px) {
-  /*ESTILO DEL FORMULARIO DE CONTACTO*/
-  .form_contact {
-    width: 80vw;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #5b258ecc;
-    border-radius: 3px;
-    margin-top: 110px;
-    margin-bottom: 110px; } }
-
-.paragraph_escuchar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  justify-content: center;
-  justify-items: center; }
-
-.iframe_video {
-  width: 80%;
-  height: 430px;
-  border: 0; }
-
-.container_escuchar_mother, .container_escuchar, .container_escuchar2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  align-items: center;
-  grid-auto-flow: row; }
-
-/*Bloque de escuchar.html con video a la izquierda y texto a la derecha*/
-.container_escuchar {
-  grid-template-areas: "content-text video-music"; }
-  .container_escuchar .content-text {
-    grid-area: content-text; }
-  .container_escuchar .video-music {
-    grid-area: video-music;
-    display: flex;
-    justify-content: center; }
-
-/*Bloque de escuchar.html con video a la derecha y texto a la izquierda*/
-.container_escuchar2 {
-  grid-template-areas: "video-music2 content-text2"; }
-  .container_escuchar2 .content-text2 {
-    align-items: center;
-    padding-top: 0 auto;
-    padding-bottom: 0 auto; }
-  .container_escuchar2 .video-music2 {
-    grid-area: video-music2;
-    display: flex;
-    justify-content: center; }
-
-@media (max-width: 870px) {
-  .container_escuchar {
-    display: block; }
-  .paragraph_escuchar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    justify-content: center;
-    justify-items: center; }
-  .content-text {
-    justify-content: center;
-    padding-top: 0 auto;
-    padding-bottom: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px; }
-  .video-music {
-    display: flex;
-    justify-content: center;
-    width: 100%; }
-  .container_escuchar2 {
-    display: block; }
-  .content-text2 {
-    padding-top: 0 auto;
-    padding-bottom: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px; }
-  .video-music2 {
-    display: flex;
-    justify-content: center;
-    width: 100%; }
-  .iframe_video {
-    width: 100%;
-    height: 430px;
-    border: 0; }
-  .container_escuchar {
-    justify-content: center; } }

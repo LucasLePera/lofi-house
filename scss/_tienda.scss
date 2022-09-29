@@ -1,92 +1,19 @@
 @import './variables/variables.scss';
 @import 'mixin';
 
-.tienda_product_galery {
+.product-card-container {
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-
-        "product1 product2 product3"
-        "product4 product5 product6"
-        "product7 product8 product9"
-        "product10 product11 product12";
-
-
-
-    .product1 {
-        grid-area: product1;
-    }
-
-    .product2 {
-        grid-area: product2;
-    }
-
-    .product3 {
-        grid-area: product3;
-    }
-
-    .product4 {
-        grid-area: product4;
-    }
-
-    .product5 {
-        grid-area: product5;
-    }
-
-    .product6 {
-        grid-area: product6;
-    }
-
-    .product7 {
-        grid-area: product7;
-    }
-
-    .product8 {
-        grid-area: product8;
-    }
-
-    .product9 {
-        grid-area: product9;
-    }
-
-    .product10 {
-        grid-area: product10;
-    }
-
-    .product11 {
-        grid-area: product11;
-    }
-
-    .product12 {
-        grid-area: product12;
-    }
-
-    /*PRODUCTO TIENDA*/
+    height: 500px;
+    overflow-x: hidden;
+    height: 550px;
 
     .product-card {
 
-        width: auto;
         box-shadow: 0 2px 7px #dfdfdf;
-        margin: 20px;
         background: #fafafa;
-        max-height: 650px;
-
-        .badge {
-
-            position: absolute;
-            left: 0;
-            top: 20px;
-            text-transform: uppercase;
-            font-size: 13px;
-            font-weight: 700;
-            background: #5B258F;
-            color: #fff;
-            padding: 3px 10px;
-
-        }
+        width: auto;
+        margin: 20px auto;
+        max-width: 280px;
 
         .product-tumb {
 
@@ -101,17 +28,20 @@
             background: #f0f0f0;
             overflow-y: hidden;
 
-        }
 
-        .product-tumb img {
 
-            max-width: 100%;
-            max-height: 100%;
+            img {
 
-            &:hover {
+                width: auto;
+                max-width: 250px;
+                margin: auto;
+                padding: 10px;
 
-                @include trnsfm_1_1;
+                &:hover {
 
+                    @include trnsfm_1_1;
+
+                }
             }
         }
 
@@ -121,6 +51,8 @@
             padding-left: 20px;
             padding-right: 20px;
             padding-bottom: 5px;
+            margin-bottom: auto;
+            height: 250px;
 
             .product-catagory {
 
@@ -129,15 +61,27 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 color: #ccc;
-                margin-bottom: 18px;
+                margin-bottom: 5px;
 
+            }
+
+            .product-details {
+
+                height: 100%;
+            }
+        
+            .product-catagory {
+        
+                margin-bottom: auto;
+        
             }
 
             h4 a {
 
                 font-weight: 500;
                 display: block;
-                margin-bottom: 18px;
+                text-align: center;
+                margin-bottom: 5px;
                 text-transform: uppercase;
                 color: #363636;
                 text-decoration: none;
@@ -164,9 +108,10 @@
 
                 overflow: hidden;
                 border-top: 1px solid #eee;
-                padding-top: 20px;
                 display: flex;
                 justify-content: space-evenly;
+                justify-items: center;
+                align-items: center;
                 flex-wrap: wrap;
 
                 .product-price {
@@ -200,14 +145,6 @@
                 }
             }
 
-            .product-pin-img {
-
-                height: auto;
-                width: auto;
-                display: flex;
-
-            }
-
             .product-links a {
 
                 display: inline-block;
@@ -224,11 +161,3 @@
         }
     }
 }
-
-        // @if product-card height>50px{
-            
-        //     white-space: nowrap;
-        //     overflow: hidden;
-        //     text-overflow: ellipsis;
-
-        // }
