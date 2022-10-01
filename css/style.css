@@ -132,17 +132,6 @@
     padding-right: 1vw; }
   .body .img_lofi {
     width: 40vw; }
-  .body .index_text {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 10px;
-    grid-template-areas: "index_pharagraph1" "index_pharagraph2"; }
-    .body .index_text .index_pharagraph1 {
-      grid-area: index_pharagraph1;
-      margin-bottom: 10px; }
-    .body .index_text .index_pharagraph2 {
-      grid-area: index_pharagraph2; }
   .body .img_lofi_girl {
     display: flex;
     justify-content: center;
